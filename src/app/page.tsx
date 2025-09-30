@@ -10,15 +10,17 @@ import { Testimonials } from '@/components/sections/testimonials';
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <Products />
-        <About />
-        <RecipeGenerator />
-        <Testimonials />
-        <Newsletter />
-      </main>
+      <div className="mx-auto w-[70%]">
+        <Header />
+        <main className="flex-1">
+          <Hero />
+          <Products />
+          <About />
+          <RecipeGenerator />
+          <Testimonials />
+          <Newsletter />
+        </main>
+      </div>
       <Footer />
     </div>
   );
