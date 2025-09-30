@@ -43,7 +43,7 @@ export function Hero() {
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/0" />
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                        <h1 className="font-headline text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-7xl">
                         {slide.title}
                       </h1>
