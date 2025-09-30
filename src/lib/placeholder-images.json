@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "A vibrant array of spices in bowls.",
+      "imageUrl": "https://images.unsplash.com/photo-1619385003903-5df9413b8c04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcGljZXMlMjBtYXJrZXR8ZW58MHx8fHwxNzU5MjU4OTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spices market"
+    },
+    {
+      "id": "hero-2",
+      "description": "A spoonful of golden turmeric powder.",
+      "imageUrl": "https://images.unsplash.com/photo-1698943510650-9232c98a5328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0dXJtZXJpYyUyMHBvd2RlcnxlbnwwfHx8fDE3NTkyMDIyNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "turmeric powder"
+    },
+    {
+      "id": "hero-3",
+      "description": "Cinnamon sticks and star anise arranged beautifully.",
+      "imageUrl": "https://images.unsplash.com/photo-1702918064662-548372515430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaW5uYW1vbiUyMGFuaXNlfGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cinnamon anise"
+    },
+    {
+      "id": "product-paprika",
+      "description": "A small bowl of smoked paprika.",
+      "imageUrl": "https://images.unsplash.com/photo-1732759959335-31ca75ba423f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXByaWthJTIwcG93ZGVyfGVufDB8fHx8MTc1OTI1NzkzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paprika powder"
+    },
+    {
+      "id": "product-saffron",
+      "description": "Delicate strands of saffron spice.",
+      "imageUrl": "https://images.unsplash.com/photo-1666885559542-849587ffa3d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzYWZmcm9uJTIwc3RyYW5kc3xlbnwwfHx8fDE3NTkyNTg5MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "saffron strands"
+    },
+    {
+      "id": "product-curry-blend",
+      "description": "A custom curry powder blend.",
+      "imageUrl": "https://images.unsplash.com/photo-1490026220125-b42f3d66abd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjdXJyeSUyMHBvd2RlcnxlbnwwfHx8fDE3NTkyNTg5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "curry powder"
+    },
+    {
+      "id": "product-taco-blend",
+      "description": "A zesty taco seasoning blend.",
+      "imageUrl": "https://images.unsplash.com/photo-1717070397656-29f04e19a5fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0YWNvJTIwc2Vhc29uaW5nfGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "taco seasoning"
+    },
+    {
+      "id": "product-himalayan-salt",
+      "description": "Coarse pink Himalayan salt.",
+      "imageUrl": "https://images.unsplash.com/photo-1614759258004-39da973d3268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoaW1hbGF5YW4lMjBzYWx0fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "himalayan salt"
+    },
+    {
+      "id": "product-smoked-salt",
+      "description": "Smoked sea salt flakes.",
+      "imageUrl": "https://images.unsplash.com/photo-1646722391295-0bfc1035fb99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbW9rZWQlMjBzYWx0fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smoked salt"
+    },
+    {
+      "id": "product-rosemary",
+      "description": "Dried rosemary leaves.",
+      "imageUrl": "https://images.unsplash.com/photo-1711919529153-aff395cb268d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkcmllZCUyMHJvc2VtYXJ5fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dried rosemary"
+    },
+    {
+      "id": "product-oregano",
+      "description": "Dried oregano in a wooden spoon.",
+      "imageUrl": "https://images.unsplash.com/photo-1632670492791-e65caa3f7926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkcmllZCUyMG9yZWdhbm98ZW58MHx8fHwxNzU5MjU4OTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dried oregano"
+    },
+    {
+      "id": "about-us",
+      "description": "The founders of Spice Paradise in their kitchen.",
+      "imageUrl": "https://images.unsplash.com/photo-1602028915047-37269d1a73f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxraXRjaGVuJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU5MjI1ODY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen interior"
+    }
+  ]
 }

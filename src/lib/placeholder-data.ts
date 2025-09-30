@@ -1,0 +1,85 @@
+export type Product = {
+  id: string;
+  name: string;
+  price: string;
+  category: 'Spices' | 'Blends' | 'Salts' | 'Herbs';
+  imageId: string;
+};
+
+export const products: Product[] = [
+  { id: '1', name: 'Smoked Paprika', price: '$7.50', category: 'Spices', imageId: 'product-paprika' },
+  { id: '2', name: 'Saffron Threads', price: '$15.00', category: 'Spices', imageId: 'product-saffron' },
+  { id: '3', name: 'Madras Curry Blend', price: '$9.00', category: 'Blends', imageId: 'product-curry-blend' },
+  { id: '4', name: 'Zesty Taco Blend', price: '$8.50', category: 'Blends', imageId: 'product-taco-blend' },
+  { id: '5', name: 'Pink Himalayan Salt', price: '$6.00', category: 'Salts', imageId: 'product-himalayan-salt' },
+  { id: '6', name: 'Applewood Smoked Salt', price: '$7.00', category: 'Salts', imageId: 'product-smoked-salt' },
+  { id: '7', name: 'Dried Rosemary', price: '$5.50', category: 'Herbs', imageId: 'product-rosemary' },
+  { id: '8', name: 'Greek Oregano', price: '$5.00', category: 'Herbs', imageId: 'product-oregano' },
+];
+
+export type Testimonial = {
+  id: string;
+  quote: string;
+  name: string;
+  title: string;
+  rating: number;
+};
+
+export const testimonials: Testimonial[] = [
+    {
+        id: '1',
+        quote: "The quality of spices from Spice Paradise is unmatched. My cooking has been elevated to a whole new level!",
+        name: 'Elena Rodriguez',
+        title: 'Home Chef',
+        rating: 5,
+    },
+    {
+        id: '2',
+        quote: "I love the unique blends. The Madras Curry is my absolute favorite. Fast shipping and beautiful packaging too.",
+        name: 'David Chen',
+        title: 'Food Blogger',
+        rating: 5,
+    },
+    {
+        id: '3',
+        quote: "As a professional chef, I rely on the best ingredients. Spice Paradise delivers consistency and flavor every time.",
+        name: 'Aisha Jalloh',
+        title: 'Restaurant Owner',
+        rating: 5,
+    },
+    {
+        id: '4',
+        quote: "The AI recipe generator is a game changer! I never know what to do with leftover ingredients, and it gives me amazing ideas.",
+        name: 'Marcus Holloway',
+        title: 'Busy Parent',
+        rating: 5,
+    }
+];
+
+export type HeroSlide = {
+  id: string;
+  title: string;
+  subtitle: string;
+  imageId: string;
+};
+
+export const heroSlides: HeroSlide[] = [
+    {
+        id: '1',
+        title: 'Experience a World of Flavor',
+        subtitle: 'Hand-selected, single-origin spices delivered to your door.',
+        imageId: 'hero-1',
+    },
+    {
+        id: '2',
+        title: 'Golden Turmeric',
+        subtitle: 'Discover the rich, earthy notes of our premium turmeric.',
+        imageId: 'hero-2',
+    },
+    {
+        id: '3',
+        title: 'Artisanal Blends',
+        subtitle: 'Perfectly balanced for an unforgettable culinary journey.',
+        imageId: 'hero-3',
+    }
+];
