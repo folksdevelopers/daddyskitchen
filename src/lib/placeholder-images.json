@@ -81,7 +81,7 @@
     {
       "id": "hero-bottle-2",
       "description": "Daddy's Kitchen Tikka Masala",
-      "imageUrl": "https://images.unsplash.com/photo-1741521312797-28c6e5466e65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1741521312797-28c6e6466e65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "spice bottle"
     },
     {
@@ -95,6 +95,30 @@
       "description": "A colorful assortment of whole and ground spices.",
       "imageUrl": "https://images.unsplash.com/photo-1476513788285-d885a086427a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhc3NvcnRlZCUyMHNwaWNlc3xlbnwwfHx8fDE3NTk1MjI5NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "assorted spices"
+    },
+    {
+      "id": "featured-coriander",
+      "description": "Daddy's Kitchen Coriander Powder",
+      "imageUrl": "https://images.unsplash.com/photo-1741521312797-28c6e6466e65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coriander powder"
+    },
+    {
+      "id": "featured-chaat",
+      "description": "Daddy's Kitchen Chaat Masala",
+      "imageUrl": "https://images.unsplash.com/photo-1741521312102-b1ff2388d3c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chaat masala"
+    },
+    {
+      "id": "featured-tikka",
+      "description": "Daddy's Kitchen Tikka Masala",
+      "imageUrl": "https://images.unsplash.com/photo-1664409973268-f8355782ad78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tikka masala"
+    },
+    {
+      "id": "featured-vegetable",
+      "description": "Daddy's Kitchen Vegetable Masala",
+      "imageUrl": "https://images.unsplash.com/photo-1664409973268-f8355782ad78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vegetable masala"
     }
   ]
 }

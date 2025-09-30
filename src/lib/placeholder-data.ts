@@ -17,6 +17,20 @@ export const products: Product[] = [
   { id: '8', name: 'Greek Oregano', price: '$5.00', category: 'Herbs', imageId: 'product-oregano' },
 ];
 
+export type FeaturedProduct = {
+  id: string;
+  name: string;
+  description: string;
+  imageId: string;
+};
+
+export const featuredProducts: FeaturedProduct[] = [
+    { id: '1', name: 'Turmeric Powder', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-coriander' },
+    { id: '2', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-chaat' },
+    { id: '3', name: 'Green Gram', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-tikka' },
+    { id: '4', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-vegetable' },
+];
+
 export type Testimonial = {
   id: string;
   quote: string;
