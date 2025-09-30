@@ -1,4 +1,5 @@
 import { About } from '@/components/sections/about';
+import { Features } from '@/components/sections/features';
 import { Footer } from '@/components/layout/footer';
 import { Header } from '@/components/layout/header';
 import { Hero } from '@/components/sections/hero';
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Features />
         <Products />
         <About />
         <RecipeGenerator />
