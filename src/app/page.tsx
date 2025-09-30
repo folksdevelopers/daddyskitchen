@@ -7,6 +7,7 @@ import { Newsletter } from '@/components/sections/newsletter';
 import { Products } from '@/components/sections/products';
 import { RecipeGenerator } from '@/components/sections/recipe-generator';
 import { Testimonials } from '@/components/sections/testimonials';
+import { WhyChooseUs } from '@/components/sections/why-choose-us';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Features />
         <About />
+        <WhyChooseUs />
         <Products />
         <RecipeGenerator />
         <Testimonials />
