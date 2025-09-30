@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Gilroy', 'serif'],
-        headline: ['Gilroy', 'serif'],
+        body: ['Gilroy-Regular', 'sans-serif'],
+        headline: ['Gilroy-Bold', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {

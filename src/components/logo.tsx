@@ -1,14 +1,9 @@
-import { Flame } from 'lucide-react';
+import Image from 'next/image';
 
 export function Logo() {
   return (
-    <a href="/" className="flex items-center gap-2" aria-label="Spice Paradise homepage">
-      <div className="rounded-full bg-primary/10 p-2 text-primary">
-        <Flame className="h-6 w-6" />
-      </div>
-      <span className="font-headline text-2xl font-bold text-primary">
-        Spice Paradise
-      </span>
+    <a href="/" className="flex items-center" aria-label="Spice Paradise homepage">
+      <Image src="/img_logo.png" alt="Spice Paradise Logo" width={120} height={40} priority />
     </a>
   );
 }

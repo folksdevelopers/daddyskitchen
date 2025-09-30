@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
         {children}

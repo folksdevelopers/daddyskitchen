@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Search } from 'lucide-react';
-import { DaddyKitchenLogo } from '../daddy-kitchen-logo';
+import { Logo } from '../logo';
 import { useState } from 'react';
 import { Input } from '../ui/input';
 
@@ -23,7 +23,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <DaddyKitchenLogo className="h-20 w-auto" />
+        <Logo />
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <a
@@ -56,7 +56,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
-                <DaddyKitchenLogo className="h-16 w-auto" />
+                <Logo />
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
                     <a
