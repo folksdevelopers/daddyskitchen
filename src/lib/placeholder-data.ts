@@ -1,21 +1,30 @@
 export type Product = {
   id: string;
   name: string;
-  price: string;
+  description: string;
   category: 'Spices' | 'Blends' | 'Salts' | 'Herbs';
   imageId: string;
 };
 
-export const products: Product[] = [
-  { id: '1', name: 'Smoked Paprika', price: '$7.50', category: 'Spices', imageId: 'product-paprika' },
-  { id: '2', name: 'Saffron Threads', price: '$15.00', category: 'Spices', imageId: 'product-saffron' },
-  { id: '3', name: 'Madras Curry Blend', price: '$9.00', category: 'Blends', imageId: 'product-curry-blend' },
-  { id: '4', name: 'Zesty Taco Blend', price: '$8.50', category: 'Blends', imageId: 'product-taco-blend' },
-  { id: '5', name: 'Pink Himalayan Salt', price: '$6.00', category: 'Salts', imageId: 'product-himalayan-salt' },
-  { id: '6', name: 'Applewood Smoked Salt', price: '$7.00', category: 'Salts', imageId: 'product-smoked-salt' },
-  { id: '7', name: 'Dried Rosemary', price: '$5.50', category: 'Herbs', imageId: 'product-rosemary' },
-  { id: '8', name: 'Greek Oregano', price: '$5.00', category: 'Herbs', imageId: 'product-oregano' },
+export const allProducts: Product[] = [
+  { id: '1', name: 'Turmeric Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander' },
+  { id: '2', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-chaat' },
+  { id: '3', name: 'Green Gram', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Herbs', imageId: 'featured-tikka' },
+  { id: '4', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-vegetable' },
+  { id: '5', name: 'Chaat Masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat' },
+  { id: '6', name: 'Coriander Powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander' },
+  { id: '7', name: 'Tikka Masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka' },
+  { id: '8', name: 'Vegetable Masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable' },
+  { id: '9', name: 'Turmeric Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander' },
+  { id: '10', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-chaat' },
+  { id: '11', name: 'Green Gram', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Herbs', imageId: 'featured-tikka' },
+  { id: '12', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-vegetable' },
+  { id: '13', name: 'Chaat Masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat' },
+  { id: '14', name: 'Coriander Powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander' },
+  { id: '15', name: 'Tikka Masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka' },
+  { id: '16', name: 'Vegetable Masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable' },
 ];
+
 
 export type FeaturedProduct = {
   id: string;

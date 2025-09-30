@@ -10,7 +10,7 @@ import { Input } from '../ui/input';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '#products', label: 'Products' },
+  { href: '/products', label: 'Products' },
   { href: '#recipes', label: 'Recipes' },
   { href: '/contact', label: 'Contact' },
 ];
