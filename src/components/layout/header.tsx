@@ -8,10 +8,9 @@ import { useState } from 'react';
 import { Input } from '../ui/input';
 
 const navLinks = [
-  { href: '#', label: 'Home' },
-  { href: '#about', label: 'About' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
   { href: '#products', label: 'Products' },
-  { href: '#', label: 'Gallery' },
   { href: '#recipes', label: 'Recipes' },
   { href: '#', label: 'Contact' },
 ];
