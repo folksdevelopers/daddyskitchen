@@ -1,3 +1,4 @@
+
 import { socialFeed, videoTestimonial } from '@/lib/placeholder-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Facebook, Instagram, Twitter, PlayCircle } from 'lucide-react';
@@ -56,7 +57,7 @@ export function Testimonials() {
                 );
             })}
           </div>
-          <div className="lg:sticky lg:top-24">
+          <div>
             <div className="rounded-2xl bg-card shadow-lg overflow-hidden relative group aspect-square">
                 {videoImage && (
                 <Image
