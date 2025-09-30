@@ -22,8 +22,8 @@ export function Testimonials() {
             What our customers are saying
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:col-span-2 gap-8 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
             {socialFeed.map((item) => {
                 const image = images.find(img => img.id === item.imageId);
                 const Icon = iconMap[item.platform];
