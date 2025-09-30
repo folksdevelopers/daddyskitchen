@@ -71,6 +71,24 @@
       "description": "The founders of Spice Paradise in their kitchen.",
       "imageUrl": "https://images.unsplash.com/photo-1602028915047-37269d1a73f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxraXRjaGVuJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU5MjI1ODY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen interior"
+    },
+    {
+      "id": "hero-bottle-1",
+      "description": "Daddy's Kitchen Vegetable Masala",
+      "imageUrl": "https://images.unsplash.com/photo-1664409973268-f8355782ad78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spice bottle"
+    },
+    {
+      "id": "hero-bottle-2",
+      "description": "Daddy's Kitchen Tikka Masala",
+      "imageUrl": "https://images.unsplash.com/photo-1741521312797-28c6e5466e65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spice bottle"
+    },
+    {
+      "id": "hero-bottle-3",
+      "description": "Daddy's Kitchen Vegetable Masala copy",
+      "imageUrl": "https://images.unsplash.com/photo-1741521312102-b1ff2388d3c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spice bottle"
     }
   ]
 }

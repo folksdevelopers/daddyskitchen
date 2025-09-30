@@ -58,28 +58,11 @@ export const testimonials: Testimonial[] = [
 
 export type HeroSlide = {
   id: string;
-  title: string;
-  subtitle: string;
   imageId: string;
 };
 
 export const heroSlides: HeroSlide[] = [
-    {
-        id: '1',
-        title: 'Experience a World of Flavor',
-        subtitle: 'Hand-selected, single-origin spices delivered to your door.',
-        imageId: 'hero-1',
-    },
-    {
-        id: '2',
-        title: 'Golden Turmeric',
-        subtitle: 'Discover the rich, earthy notes of our premium turmeric.',
-        imageId: 'hero-2',
-    },
-    {
-        id: '3',
-        title: 'Artisanal Blends',
-        subtitle: 'Perfectly balanced for an unforgettable culinary journey.',
-        imageId: 'hero-3',
-    }
+    { id: '1', imageId: 'hero-bottle-1' },
+    { id: '2', imageId: 'hero-bottle-2' },
+    { id: '3', imageId: 'hero-bottle-3' },
 ];
