@@ -70,6 +70,60 @@ export const testimonials: Testimonial[] = [
     }
 ];
 
+export type SocialFeedItem = {
+  id: string;
+  platform: 'twitter' | 'instagram' | 'facebook';
+  author: string;
+  text: string;
+  imageId?: string;
+};
+
+export const socialFeed: SocialFeedItem[] = [
+  {
+    id: '1',
+    platform: 'twitter',
+    author: 'faizal',
+    text: 'i prefer @daddyskitchen curry masala.',
+  },
+  {
+    id: '2',
+    platform: 'twitter',
+    author: 'faizal',
+    text: 'i prefer @daddyskitchen curry masala.',
+  },
+  {
+    id: '3',
+    platform: 'instagram',
+    author: 'daddyskitchen',
+    text: 'Chicken Curry #thursday @daddyskitchen',
+    imageId: 'testimonial-ig-1',
+  },
+  {
+    id: '4',
+    platform: 'facebook',
+    author: 'daddyskitchen',
+    text: 'Sambar #sunday @daddyskitchen',
+    imageId: 'testimonial-fb-1',
+  },
+   {
+    id: '5',
+    platform: 'facebook',
+    author: 'daddyskitchen',
+    text: 'Chicken Curry #thursday @daddyskitchen',
+  },
+];
+
+export type VideoTestimonial = {
+  id: string;
+  imageId: string;
+}
+
+export const videoTestimonial: VideoTestimonial = {
+  id: '1',
+  imageId: 'testimonial-video',
+};
+
+
 export type HeroSlide = {
   id: string;
   imageId: string;

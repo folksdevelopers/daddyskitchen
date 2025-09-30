@@ -19,8 +19,8 @@ export default function Home() {
         <About />
         <WhyChooseUs />
         <Products />
-        <RecipeGenerator />
         <Testimonials />
+        <RecipeGenerator />
         <Newsletter />
       </main>
       <Footer />

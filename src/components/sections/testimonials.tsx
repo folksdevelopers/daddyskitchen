@@ -1,67 +1,79 @@
-'use client';
+import { socialFeed, videoTestimonial } from '@/lib/placeholder-data';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Facebook, Instagram, Twitter, PlayCircle } from 'lucide-react';
+import Image from 'next/image';
 
-import {
-  Card,
-  CardContent,
-} from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
-import { testimonials } from '@/lib/placeholder-data';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { StarIcon } from '../icons/star-icon';
-import { Quote } from 'lucide-react';
+const iconMap = {
+  twitter: <Twitter className="h-8 w-8 text-white fill-sky-500" />,
+  instagram: <Instagram className="h-8 w-8 text-white" />,
+  facebook: <Facebook className="h-8 w-8 text-white fill-blue-600" />,
+};
 
 export function Testimonials() {
+  const images = PlaceHolderImages;
+  const videoImage = images.find(img => img.id === videoTestimonial.imageId);
+
   return (
-    <section id="testimonials" className="bg-secondary py-16 sm:py-24">
+    <section id="testimonials" className="py-16 sm:py-24 bg-secondary/30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">What Our Customers Say</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-                We're proud to have delighted food lovers all over the world.
-            </p>
+          <h2 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">Testimonials</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-accent">
+            Taste the real Spice of Kerala
+          </p>
         </div>
-        <Carousel
-          opts={{ align: 'start', loop: true }}
-          className="mt-12 w-full"
-        >
-          <CarouselContent>
-            {testimonials.map((testimonial) => (
-              <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-4">
-                  <Card className="h-full flex flex-col justify-between p-6 shadow-lg">
-                    <CardContent className="p-0">
-                       <Quote className="h-8 w-8 text-primary/30 mb-4" />
-                       <p className="text-lg text-foreground/80 italic">"{testimonial.quote}"</p>
-                    </CardContent>
-                    <div className="mt-6 flex items-center gap-4">
-                      <Avatar>
-                        <AvatarImage src={`https://i.pravatar.cc/40?u=${testimonial.id}`} />
-                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                      </Avatar>
-                      <div>
-                        <p className="font-bold">{testimonial.name}</p>
-                        <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                      </div>
+        <div className="mt-12 grid grid-cols-12 grid-rows-6 gap-4 h-[600px]">
+          {socialFeed.map((item, index) => {
+            const image = images.find(img => img.id === item.imageId);
+            const Icon = iconMap[item.platform];
+            return (
+              <div
+                key={item.id}
+                className={`col-span-12 rounded-2xl bg-card p-6 shadow-lg flex flex-col justify-between ${
+                  [0, 1].includes(index) ? 'sm:col-span-3 row-span-2' : 
+                  index === 2 ? 'sm:col-span-3 row-span-4' : 
+                  index === 3 ? 'sm:col-span-3 row-span-3' : 
+                  'sm:col-span-3 row-span-3'
+                }`}
+              >
+                <div>
+                  <div className="flex items-center gap-3">
+                    <div className={`w-12 h-12 rounded-full flex items-center justify-center ${item.platform === 'instagram' ? 'bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500' : 'bg-card'}`}>
+                      {Icon}
                     </div>
-                    <div className="mt-4 flex items-center">
-                      {Array.from({ length: 5 }).map((_, i) => (
-                        <StarIcon key={i} className={`h-5 w-5 ${i < testimonial.rating ? 'text-accent' : 'text-gray-300'}`} />
-                      ))}
-                    </div>
-                  </Card>
+                    <p className="font-bold text-lg">@{item.author}</p>
+                  </div>
+                  <p className="mt-4 text-muted-foreground">{item.text}</p>
                 </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="ml-12" />
-          <CarouselNext className="mr-12" />
-        </Carousel>
+                {image && (
+                  <div className="relative mt-4 h-48 w-full rounded-lg overflow-hidden">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      data-ai-hint={image.imageHint}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+              </div>
+            );
+          })}
+          <div className="col-span-12 sm:col-span-6 row-span-6 rounded-2xl bg-card shadow-lg overflow-hidden relative group">
+            {videoImage && (
+              <Image
+                src={videoImage.imageUrl}
+                alt={videoImage.description}
+                data-ai-hint={videoImage.imageHint}
+                fill
+                className="object-cover"
+              />
+            )}
+            <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <PlayCircle className="h-24 w-24 text-white/80 transform transition-transform group-hover:scale-110" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
