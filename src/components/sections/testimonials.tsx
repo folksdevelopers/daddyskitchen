@@ -28,6 +28,34 @@ export function Testimonials() {
             {socialFeed.map((item) => {
                 const image = images.find(img => img.id === item.imageId);
                 const Icon = iconMap[item.platform];
+                
+                if (item.platform === 'instagram' && image) {
+                  return (
+                    <div key={item.id} className="relative pt-6">
+                        <div className="absolute top-0 left-4 w-12 h-12 rounded-full flex items-center justify-center bg-card shadow-md z-10">
+                            <div className={`w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500`}>
+                                {Icon}
+                            </div>
+                        </div>
+                        <div className="rounded-2xl bg-card p-4 pt-10 shadow-lg flex flex-col">
+                            <div className="relative h-64 w-full rounded-lg overflow-hidden">
+                                <Image
+                                src={image.imageUrl}
+                                alt={image.description}
+                                data-ai-hint={image.imageHint}
+                                fill
+                                className="object-cover"
+                                />
+                            </div>
+                            <div className="mt-4">
+                                <p className="text-muted-foreground">{item.text.replace(/#\w+/g, (tag) => `<span class="text-blue-500">${tag}</span>`).replace(/@\w+/g, '')}</p>
+                                <p className="font-bold text-lg text-primary">@{item.author}</p>
+                            </div>
+                        </div>
+                    </div>
+                  )
+                }
+
                 return (
                 <div key={item.id} className="relative pt-6">
                     <div className="absolute top-0 left-4 w-12 h-12 rounded-full flex items-center justify-center bg-card shadow-md">
