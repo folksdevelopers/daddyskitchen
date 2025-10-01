@@ -40,9 +40,9 @@ export function Collections() {
     <section id="collections" className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-12">
-            <div>
+            <div className='pb-4'>
                  <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                    Best Delivered <span className='text-primary'>Categories</span>
+                    Best Delivered <br /> <span className='text-primary'>Categories</span>
                 </h2>
             </div>
             <div>
