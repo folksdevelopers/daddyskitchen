@@ -16,18 +16,13 @@ const features = [
     title: 'Packed with Care',
     description: 'We ensure maximum freshness and flavor by packing our spices with the utmost care.',
   },
-  {
-    icon: <Leaf className="h-8 w-8" />,
-    title: 'Unforgettable Flavor',
-    description: 'Unlock a world of taste and elevate your culinary creations with our premium spices.',
-  },
 ];
 
 export function Features() {
   return (
     <section id="features" className="bg-secondary/50 py-16 sm:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <div key={index} className="text-center">
               <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary">
