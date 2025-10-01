@@ -47,7 +47,7 @@ export function Collections() {
             </div>
             <div>
                  <p className="text-muted-foreground">
-                    Here Are Some Of Our Best Distributed Categories. If You Want You Can Order From Here.
+                    Here Are Some Of Our Best Distributed Categories. If You Want You Can Order From Here.Here Are Some Of Our Best Distributed Categories. If You Want You Can Order From Here.
                 </p>
             </div>
         </div>
