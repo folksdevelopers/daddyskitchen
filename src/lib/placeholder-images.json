@@ -141,7 +141,7 @@
     {
       "id": "testimonial-video",
       "description": "A close-up shot of a chicken curry being cooked in a pan.",
-      "imageUrl": "https://images.unsplash.com/photo-1604329221295-e3b9dfa43ab4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGlja2VuJTIwY3Vycnl8ZW58MHx8fHwxNzU5NTMxODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/square_Chicken-tikka-masala-curry.jpg",
       "imageHint": "chicken curry"
     },
     {
@@ -149,6 +149,30 @@
       "description": "A stylized map of a city, focusing on the New York area.",
       "imageUrl": "https://images.unsplash.com/photo-1476385822777-70eabacbd41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc1OTE3MTkxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city map"
+    },
+    {
+      "id": "collection-spices",
+      "description": "A variety of colorful spices in spoons.",
+      "imageUrl": "https://images.unsplash.com/photo-1598514982901-ae627c29a234?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcGljZXMlMjBwb3dkZXJ8ZW58MHx8fHwxNzYwMzU2NDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spices powder"
+    },
+    {
+      "id": "collection-masala",
+      "description": "A blend of Indian masala spices in a bowl.",
+      "imageUrl": "https://images.unsplash.com/photo-1629202652445-56c6123c524b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtYXNhbGF8ZW58MHx8fHwxNzYwMzU2NDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian masala"
+    },
+    {
+      "id": "collection-flours",
+      "description": "Different types of flour in bowls.",
+      "imageUrl": "https://images.unsplash.com/photo-1627485785002-4b31a894a4c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbG91cnxlbnwwfHx8fDE3NjAzNTY0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flour"
+    },
+    {
+      "id": "collection-rices",
+      "description": "Different types of rice in bowls.",
+      "imageUrl": "https://images.unsplash.com/photo-1586201375822-522614b6e7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHwjcmljZXxlbnwwfHx8fDE3NjAzNTY1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rice"
     }
   ]
 }

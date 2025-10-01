@@ -1,4 +1,5 @@
 import { About } from '@/components/sections/about';
+import { Collections } from '@/components/sections/collections';
 import { Features } from '@/components/sections/features';
 import { Footer } from '@/components/layout/footer';
 import { Header } from '@/components/layout/header';
@@ -16,6 +17,7 @@ export default function Home() {
         <Features />
         <About />
         <WhyChooseUs />
+        <Collections />
         <Products />
         <Testimonials />
       </main>
