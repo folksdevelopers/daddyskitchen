@@ -5,9 +5,9 @@ import { Facebook, Instagram, Twitter, PlayCircle } from 'lucide-react';
 import Image from 'next/image';
 
 const iconMap = {
-  twitter: <Twitter className="h-6 w-6 text-white fill-sky-500" />,
-  instagram: <Instagram className="h-6 w-6 text-white" />,
-  facebook: <Facebook className="h-6 w-6 text-white fill-blue-600" />,
+  twitter: <Twitter className="h-8 w-8 text-white fill-sky-500" />,
+  instagram: <Instagram className="h-8 w-8 text-white" />,
+  facebook: <Facebook className="h-8 w-8 text-white fill-blue-600" />,
 };
 
 export function Testimonials() {
@@ -31,13 +31,13 @@ export function Testimonials() {
                 
                 if (item.platform === 'instagram' && image) {
                   return (
-                    <div key={item.id} className="relative pt-6">
-                        <div className="absolute top-0 left-4 w-12 h-12 rounded-full flex items-center justify-center bg-card shadow-md z-10">
-                            <div className={`w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500`}>
+                    <div key={item.id} className="relative pt-8">
+                        <div className="absolute top-0 left-4 w-16 h-16 rounded-full flex items-center justify-center bg-card shadow-md z-10">
+                            <div className={`w-14 h-14 rounded-full flex items-center justify-center bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500`}>
                                 {Icon}
                             </div>
                         </div>
-                        <div className="rounded-2xl bg-card p-4 pt-10 shadow-lg flex flex-col">
+                        <div className="rounded-2xl bg-card p-4 pt-12 shadow-lg flex flex-col">
                             <div className="relative h-64 w-full rounded-lg overflow-hidden">
                                 <Image
                                 src={image.imageUrl}
@@ -60,7 +60,7 @@ export function Testimonials() {
                 <div key={item.id} className="relative pt-6">
                     <div className="absolute top-0 left-4 w-12 h-12 rounded-full flex items-center justify-center bg-card shadow-md">
                         <div className={`w-10 h-10 rounded-full flex items-center justify-center ${item.platform === 'instagram' ? 'bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500' : item.platform === 'twitter' ? 'bg-sky-500' : 'bg-blue-600'}`}>
-                            {Icon}
+                            {iconMap[item.platform]}
                         </div>
                     </div>
                     <div className="rounded-2xl bg-card p-6 pt-10 shadow-lg flex flex-col justify-between min-h-[150px]">
