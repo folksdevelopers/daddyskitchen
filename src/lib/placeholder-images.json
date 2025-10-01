@@ -129,13 +129,13 @@
     {
       "id": "testimonial-ig-1",
       "description": "A delicious looking chicken curry.",
-      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwY3Vycnl8ZW58MHx8fHwxNzU5NTMxODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/Easy-Chicken-Curry.png",
       "imageHint": "chicken curry"
     },
     {
       "id": "testimonial-fb-1",
       "description": "A bowl of Sambar, a lentil-based vegetable stew.",
-      "imageUrl": "https://images.unsplash.com/photo-1668665632222-6838a333918d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYW1iYXIlMjBjdXJyeXxlbnwwfHx8fDE3NTk1MzE4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/South-Indian-Sambar-Recipe.png",
       "imageHint": "sambar curry"
     },
     {
