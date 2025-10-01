@@ -28,60 +28,58 @@ export function Testimonials() {
             {socialFeed.map((item) => {
                 const image = images.find(img => img.id === item.imageId);
                 const Icon = iconMap[item.platform];
+                const platformStyles = {
+                    twitter: 'bg-sky-500',
+                    instagram: 'bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500',
+                    facebook: 'bg-blue-600',
+                };
                 
-                if (item.platform === 'instagram' && image) {
-                  return (
+                return (
                     <div key={item.id} className="relative pt-8">
                         <div className="absolute top-0 left-4 w-16 h-16 rounded-full flex items-center justify-center bg-card shadow-md z-10">
-                            <div className={`w-14 h-14 rounded-full flex items-center justify-center bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500`}>
+                            <div className={`w-14 h-14 rounded-full flex items-center justify-center ${platformStyles[item.platform]}`}>
                                 {Icon}
                             </div>
                         </div>
-                        <div className="rounded-2xl bg-card p-4 pt-12 shadow-lg flex flex-col">
-                            <div className="relative h-64 w-full rounded-lg overflow-hidden">
-                                <Image
-                                src={image.imageUrl}
-                                alt={image.description}
-                                data-ai-hint={image.imageHint}
-                                fill
-                                className="object-cover"
-                                />
-                            </div>
-                            <div className="mt-4">
-                                <p className="text-muted-foreground">{item.text.replace(/#\w+/g, (tag) => `<span class="text-blue-500">${tag}</span>`).replace(/@\w+/g, '')}</p>
-                                <p className="font-bold text-lg text-primary">@{item.author}</p>
-                            </div>
+                        <div className="rounded-2xl bg-card p-4 pt-12 shadow-lg flex flex-col min-h-[200px]">
+                             {image && item.platform === 'instagram' ? (
+                                <>
+                                    <div className="relative h-64 w-full rounded-lg overflow-hidden">
+                                        <Image
+                                        src={image.imageUrl}
+                                        alt={image.description}
+                                        data-ai-hint={image.imageHint}
+                                        fill
+                                        className="object-cover"
+                                        />
+                                    </div>
+                                    <div className="mt-4">
+                                        <p className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.text.replace(/#\w+/g, (tag) => `<span class="text-blue-500">${tag}</span>`).replace(/@\w+/g, '') }} />
+                                        <p className="font-bold text-lg text-primary">@{item.author}</p>
+                                    </div>
+                                </>
+                            ) : (
+                                <div className="flex flex-col justify-between flex-1 p-2">
+                                     <div>
+                                        <p className="font-bold text-lg text-primary">@{item.author}</p>
+                                        <p className="mt-2 text-muted-foreground">{item.text}</p>
+                                    </div>
+                                    {image && (
+                                    <div className="relative mt-4 h-48 w-full rounded-lg overflow-hidden">
+                                        <Image
+                                        src={image.imageUrl}
+                                        alt={image.description}
+                                        data-ai-hint={image.imageHint}
+                                        fill
+                                        className="object-cover"
+                                        />
+                                    </div>
+                                    )}
+                                </div>
+                            )}
                         </div>
                     </div>
                   )
-                }
-
-                return (
-                <div key={item.id} className="relative pt-6">
-                    <div className="absolute top-0 left-4 w-12 h-12 rounded-full flex items-center justify-center bg-card shadow-md">
-                        <div className={`w-10 h-10 rounded-full flex items-center justify-center ${item.platform === 'instagram' ? 'bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500' : item.platform === 'twitter' ? 'bg-sky-500' : 'bg-blue-600'}`}>
-                            {iconMap[item.platform]}
-                        </div>
-                    </div>
-                    <div className="rounded-2xl bg-card p-6 pt-10 shadow-lg flex flex-col justify-between min-h-[150px]">
-                        <div>
-                            <p className="font-bold text-lg text-primary">@{item.author}</p>
-                            <p className="mt-2 text-muted-foreground">{item.text}</p>
-                        </div>
-                        {image && (
-                        <div className="relative mt-4 h-48 w-full rounded-lg overflow-hidden">
-                            <Image
-                            src={image.imageUrl}
-                            alt={image.description}
-                            data-ai-hint={image.imageHint}
-                            fill
-                            className="object-cover"
-                            />
-                        </div>
-                        )}
-                    </div>
-                </div>
-                );
             })}
           </div>
           <div className="rounded-2xl bg-card shadow-lg overflow-hidden relative group aspect-square">
