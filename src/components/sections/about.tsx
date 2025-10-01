@@ -7,7 +7,7 @@ export function About() {
   return (
     <section id="about" className="py-16 sm:py-24 bg-secondary/50">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl bg-card shadow-lg overflow-hidden">
+        <div className="rounded-2xl bg-card overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div className="relative h-64 lg:h-[400px] w-full">
                     {image && (

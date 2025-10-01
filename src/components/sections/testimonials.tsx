@@ -20,7 +20,7 @@ export function Testimonials() {
         <div className="text-center">
           <h2 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">Testimonials</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-accent">
-            What our customers are saying
+            Taste the real Spice of Kerala
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
@@ -57,21 +57,19 @@ export function Testimonials() {
                 );
             })}
           </div>
-          <div>
-            <div className="rounded-2xl bg-card shadow-lg overflow-hidden relative group aspect-square">
-                {videoImage && (
-                <Image
-                    src={videoImage.imageUrl}
-                    alt={videoImage.description}
-                    data-ai-hint={videoImage.imageHint}
-                    fill
-                    className="object-cover"
-                />
-                )}
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                <PlayCircle className="h-24 w-24 text-white/80 transform transition-transform group-hover:scale-110" />
-                </div>
-            </div>
+          <div className="rounded-2xl bg-card shadow-lg overflow-hidden relative group aspect-square">
+              {videoImage && (
+              <Image
+                  src={videoImage.imageUrl}
+                  alt={videoImage.description}
+                  data-ai-hint={videoImage.imageHint}
+                  fill
+                  className="object-cover"
+              />
+              )}
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <PlayCircle className="h-24 w-24 text-white/80 transform transition-transform group-hover:scale-110" />
+              </div>
           </div>
         </div>
       </div>
