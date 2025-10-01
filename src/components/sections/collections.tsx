@@ -56,8 +56,8 @@ export function Collections() {
           {collections.map((collection) => {
             const image = images.find(img => img.id === collection.imageId);
             return (
-              <Card key={collection.name} className="group overflow-hidden rounded-2xl shadow-none border-none bg-transparent text-center h-full">
-                  <CardHeader className="p-0 relative h-64 flex items-center justify-center">
+              <Card key={collection.name} className="group flex flex-col overflow-hidden rounded-2xl shadow-none border-none bg-transparent text-center h-full">
+                  <CardHeader className="p-0 relative flex-1 flex items-center justify-center">
                     <div className="absolute inset-0 flex items-center justify-center">
                         <CollectionArc className="w-full h-full text-primary" />
                     </div>
