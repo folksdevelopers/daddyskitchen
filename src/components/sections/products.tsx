@@ -55,11 +55,11 @@ export function Products() {
                   <CardDescription className="mt-4 text-base text-muted-foreground">{product.description}</CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-center p-6 pt-0">
-                  <Link href={`/products/${product.id}`} legacyBehavior>
-                    <Button size="lg" className="bg-primary/90 hover:bg-primary text-primary-foreground rounded-full px-8">
+                  <Button asChild size="lg" className="bg-primary/90 hover:bg-primary text-primary-foreground rounded-full px-8">
+                    <Link href={`/products/${product.id}`}>
                       Check Out
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 </CardFooter>
               </Card>
             );
