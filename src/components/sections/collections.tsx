@@ -74,7 +74,7 @@ export function Collections() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-6">
-                    <CardTitle className="font-headline text-2xl font-bold text-primary">{collection.name}</CardTitle>
+                    <CardTitle className="font-headline text-2xl font-bold text-foreground">{collection.name}</CardTitle>
                   </CardContent>
                   <CardFooter className="flex justify-center p-6 pt-0">
                     <Link href="/products" legacyBehavior>
