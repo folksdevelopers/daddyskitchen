@@ -2,6 +2,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { ProductsHero } from '@/components/sections/products-hero';
 import { ProductList } from '@/components/sections/product-list';
+import { Collections } from '@/components/sections/collections';
 
 export default function ProductsPage() {
   return (
@@ -9,6 +10,7 @@ export default function ProductsPage() {
       <Header />
       <main>
         <ProductsHero />
+        <Collections />
         <ProductList />
       </main>
       <Footer />
