@@ -11,7 +11,6 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
-import { CollectionArc } from '../collection-arc';
 
 const collections = [
   {
@@ -63,8 +62,7 @@ export function Collections() {
                     <div className="relative h-64 w-full">
                         {image && (
                           <div className="absolute inset-0 top-8">
-                            <CollectionArc className='absolute inset-0' />
-                            <div className="absolute top-8 left-1/2 -translate-x-1/2 w-36 h-36 rounded-full overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105">
+                            <div className="absolute top-8 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105">
                                 <Image
                                 src={image.imageUrl}
                                 alt={collection.name}
