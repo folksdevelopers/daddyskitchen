@@ -59,9 +59,9 @@ export function Collections() {
             return (
               <Card key={collection.name} className="group flex flex-col overflow-hidden rounded-2xl shadow-none border-none bg-transparent text-center h-full">
                   <CardHeader className="p-0 relative flex-1 flex items-center justify-center">
-                     <div className="relative h-56 w-56">
+                    <div className="relative h-56 w-full">
                         {image && (
-                          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-40 w-40 rounded-full overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-110">
+                          <div className="relative h-48 w-full rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105">
                             <Image
                               src={image.imageUrl}
                               alt={collection.name}
