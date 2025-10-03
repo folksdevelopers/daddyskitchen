@@ -1,13 +1,10 @@
-
 'use client';
 
 import Image from 'next/image';
 import type { Product } from '@/lib/placeholder-data';
 import { StarIcon } from '../icons/star-icon';
 import { Button } from '../ui/button';
-import { Award, Leaf, Minus, Plus, ShieldBan } from 'lucide-react';
-import { useState } from 'react';
-import { cn } from '@/lib/utils';
+import { Award, Leaf, ShieldBan } from 'lucide-react';
 
 const assurances = [
   { icon: <Award className="h-8 w-8" />, text: 'High Quality' },
@@ -16,7 +13,6 @@ const assurances = [
 ];
 
 export function ProductDetails({ product }: { product: Product }) {
-  const [selectedWeight, setSelectedWeight] = useState(product.weights[0]);
 
   return (
     <section className="py-16 sm:py-24 bg-background">
@@ -53,17 +49,12 @@ export function ProductDetails({ product }: { product: Product }) {
                 <h3 className="text-xl font-bold text-primary">Available Weights</h3>
                 <div className="mt-4 flex items-center gap-4">
                   {product.weights.map((weight) => (
-                    <Button
+                    <div
                       key={weight}
-                      variant={selectedWeight === weight ? 'default' : 'outline'}
-                      onClick={() => setSelectedWeight(weight)}
-                      className={cn(
-                        "rounded-full px-6",
-                        selectedWeight === weight && "bg-primary text-primary-foreground"
-                      )}
+                      className="rounded-full px-6 py-2 bg-secondary text-secondary-foreground"
                     >
                       {weight}
-                    </Button>
+                    </div>
                   ))}
                 </div>
               </div>
