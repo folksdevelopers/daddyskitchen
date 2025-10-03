@@ -4,17 +4,17 @@ const features = [
   {
     icon: <Award className="h-8 w-8" />,
     title: '100% Natural',
-    description: 'We source the finest, all-natural spices, with no additives or preservatives.',
+    description: 'We source the finest Kerala spices grown using sustainable, organic farming methods, with no artificial colors, additives, or preservatives.',
   },
   {
     icon: <Globe className="h-8 w-8" />,
     title: 'Ethically Sourced',
-    description: 'Our spices are sourced responsibly and sustainably from partners around the globe.',
+    description: 'Our spices are responsibly procured directly from small-holder farmers in Kerala under fair-trade principles, ensuring both quality and community welfare.',
   },
   {
     icon: <Package className="h-8 w-8" />,
     title: 'Packed with Care',
-    description: 'We ensure maximum freshness and flavor by packing our spices with the utmost care.',
+    description: 'Each spice blend is freshly milled and carefully sealed in the UAE under strict hygiene standards to lock in maximum aroma, flavor, and nutritional value.',
   },
 ];
 
