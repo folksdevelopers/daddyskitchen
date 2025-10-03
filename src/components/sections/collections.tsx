@@ -11,7 +11,6 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
-import { CollectionArc } from '../collection-arc';
 
 const collections = [
   {
@@ -61,7 +60,6 @@ export function Collections() {
               <Card key={collection.name} className="group flex flex-col overflow-hidden rounded-2xl shadow-none border-none bg-transparent text-center h-full">
                   <CardHeader className="p-0 relative flex-1 flex items-center justify-center">
                      <div className="relative h-56 w-56">
-                        <CollectionArc className="absolute inset-0" />
                         {image && (
                           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-40 w-40 rounded-full overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-110">
                             <Image
