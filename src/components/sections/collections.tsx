@@ -59,23 +59,19 @@ export function Collections() {
             return (
               <Card key={collection.name} className="group flex flex-col overflow-hidden rounded-2xl shadow-none border-none bg-transparent text-center h-full">
                   <CardHeader className="p-0 relative flex-1 flex items-center justify-center">
-                    <div className="relative h-64 w-full">
-                        {image && (
-                          <div className="absolute inset-0 top-8">
-                            <div className="absolute top-8 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105">
-                                <Image
-                                src={image.imageUrl}
-                                alt={collection.name}
-                                data-ai-hint={image.imageHint}
-                                fill
-                                className="object-cover"
-                                />
-                            </div>
-                          </div>
-                        )}
-                    </div>
+                    {image && (
+                      <div className="w-full aspect-[2/3] relative rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105">
+                        <Image
+                          src={image.imageUrl}
+                          alt={collection.name}
+                          data-ai-hint={image.imageHint}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
                   </CardHeader>
-                  <CardContent className="p-6 pb-0 flex-grow pt-16">
+                  <CardContent className="p-6 pb-0 flex-grow pt-8">
                     <CardTitle className="font-headline text-2xl font-bold text-foreground">{collection.name}</CardTitle>
                   </CardContent>
                   <CardFooter className="flex justify-center p-6 pt-4">
