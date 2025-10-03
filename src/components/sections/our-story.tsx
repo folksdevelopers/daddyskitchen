@@ -1,19 +1,19 @@
 const storyData = [
   {
     year: '2015',
-    description: "DaddysKitchen is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    description: "Our journey began with a simple mission: to share the authentic flavors of our family's kitchen with the world. Daddy's Kitchen was born.",
   },
   {
     year: '2017',
-    description: "DaddysKitchen is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    description: "We expanded our reach, partnering with local farmers in Kerala to source the freshest, most aromatic spices directly from the harvest.",
   },
   {
     year: '2019',
-    description: "DaddysKitchen is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    description: "Our commitment to quality was recognized as we introduced new, traditional spice blends, earning the trust of customers across the country.",
   },
   {
     year: '2022',
-    description: "DaddysKitchen is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    description: "With a growing family of loyal customers, we launched our online store, making it easier than ever to bring the taste of Kerala to your home.",
   },
 ];
 
