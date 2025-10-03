@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -22,9 +23,12 @@ export function About() {
                 </div>
                 <div className="p-8 lg:p-12">
                     <h2 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">About Us</h2>
-                    <p className="mt-2 text-lg font-semibold text-accent">Taste the real Spice of Kerala</p>
+                    <p className="mt-2 text-lg font-semibold text-accent">Taste the Real Spice of Kerala</p>
                     <p className="mt-6 text-base leading-7 text-muted-foreground">
-                        An About Us page helps your company make a good first impression, and is critical for building customer trust and loyalty. An About Us page should make sure to cover basic information about the store and its founders, explain the company's purpose and how it differs from the competition, and encourage discussion and interaction.
+                        Daddy’s Kitchen Masala is the UAE’s premier Indian spice company, operated by Natural International General Trading LLC in Sharjah. Our mission is to bring the authentic flavors of Kerala’s spice heritage to Middle Eastern kitchens.
+                    </p>
+                    <p className="mt-4 text-base leading-7 text-muted-foreground">
+                        We source the finest spices directly from Kerala’s spice gardens and process them locally under strict UAE quality standards. Every blend is crafted using traditional recipes passed down through generations, ensuring you experience the true taste of home with every meal. We’ve earned the trust of over 15,000 satisfied customers by delivering purity, freshness, and genuine flavor in every pack.
                     </p>
                 </div>
             </div>
