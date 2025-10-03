@@ -63,14 +63,14 @@ export function Collections() {
                     <div className="absolute inset-0 flex items-center justify-center">
                         <CollectionArc className="w-full h-full text-primary" />
                     </div>
-                     <div className="relative h-48 w-48">
+                     <div className="relative h-56 w-56 rounded-full overflow-hidden">
                         {image && (
                           <Image
                             src={image.imageUrl}
                             alt={collection.name}
                             data-ai-hint={image.imageHint}
                             fill
-                            className="object-contain transition-transform duration-300 group-hover:scale-110"
+                            className="object-cover transition-transform duration-300 group-hover:scale-110"
                           />
                         )}
                     </div>
