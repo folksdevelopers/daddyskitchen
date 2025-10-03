@@ -15,6 +15,8 @@ export function ContactFormSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <Input type="text" placeholder="Name*" className="bg-secondary/50 border-none h-14" />
                 <Input type="email" placeholder="Email*" className="bg-secondary/50 border-none h-14" />
+                <Input type="tel" placeholder="Phone Number" className="bg-secondary/50 border-none h-14" />
+                <Input type="text" placeholder="City" className="bg-secondary/50 border-none h-14" />
               </div>
               <Textarea placeholder="Message" className="bg-secondary/50 border-none min-h-40" />
               <Button type="submit" size="lg" className="bg-gray-900 text-white hover:bg-gray-800 px-10 py-6 text-lg">
