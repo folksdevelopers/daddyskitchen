@@ -27,7 +27,6 @@ export function ProductDetails({ product }: { product: Product }) {
                         <StarIcon key={i} className="h-5 w-5" />
                     ))}
                 </div>
-                <span className="text-2xl font-bold text-foreground">{product.price.toFixed(2)}Rs</span>
               </div>
               <p className="mt-6 text-base leading-7 text-muted-foreground">
                 {product.description}
