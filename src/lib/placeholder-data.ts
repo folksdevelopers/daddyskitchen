@@ -10,7 +10,7 @@ export type Product = {
 };
 
 export const allProducts: Product[] = [
-  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', category: 'Spices', imageUrl: '/turmeric-powder.jpg', price: 149.00 },
+  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', category: 'Spices', imageUrl: '/turmeric.jpg', price: 149.00 },
   { id: '2', name: 'Chilli Powder', slug: 'chilli-powder', description: 'Vibrant red chilli powder ground from premium dried red chillies. Adds heat, color, and depth to your dishes with its bold, fiery flavor.', category: 'Spices', imageUrl: '/chilli-powder.jpg', price: 135.00 },
   { id: '3', name: 'Black Pepper Powder', slug: 'black-pepper-powder', description: 'Freshly ground black pepper with a sharp, pungent flavor and aromatic fragrance. Essential for enhancing the taste of any savory dish.', category: 'Spices', imageUrl: '/black-pepper-powder.jpg', price: 180.00 },
   { id: '4', name: 'Coriander Powder', slug: 'coriander-powder', description: 'Freshly ground coriander seeds that add a warm, nutty, and citrusy flavor to curries, dals, and marinades.', category: 'Spices', imageUrl: '/coriander-powder.jpg', price: 95.00 },
@@ -37,10 +37,10 @@ export type FeaturedProduct = {
 };
 
 export const featuredProducts: FeaturedProduct[] = [
-    { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', imageUrl: '/turmeric-powder.jpg' },
-    { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Finely milled roasted rice flour mix, specially prepared for making soft, stringy and authentic South Indian idiyappam.', imageUrl: '/idiyappam-powder.jpg' },
-    { id: '3', name: 'Green Gram (Moong Dal)', slug: 'green-gram', description: 'Naturally grown whole green gram packed with protein, fiber, and essential nutrients. Suitable for curries, sprouts, and soups.', imageUrl: '/green-gram.jpg' },
-    { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-3', description: 'A ready mix for making soft and stringy idiyappam.', imageUrl: '/idiyappam-powder-3.jpg' },
+  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', category: 'Spices', imageUrl: '/turmeric.jpg', price: 149.00 },
+  { id: '2', name: 'Chilli Powder', slug: 'chilli-powder', description: 'Vibrant red chilli powder ground from premium dried red chillies. Adds heat, color, and depth to your dishes with its bold, fiery flavor.', category: 'Spices', imageUrl: '/chilli-powder.jpg', price: 135.00 },
+  { id: '3', name: 'Black Pepper Powder', slug: 'black-pepper-powder', description: 'Freshly ground black pepper with a sharp, pungent flavor and aromatic fragrance. Essential for enhancing the taste of any savory dish.', category: 'Spices', imageUrl: '/black-pepper-powder.jpg', price: 180.00 },
+  { id: '4', name: 'Coriander Powder', slug: 'coriander-powder', description: 'Freshly ground coriander seeds that add a warm, nutty, and citrusy flavor to curries, dals, and marinades.', category: 'Spices', imageUrl: '/coriander-powder.jpg', price: 95.00 }
 ];
 
 export type Testimonial = {
