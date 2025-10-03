@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useEffect, useState } from 'react';
+import { Logo } from '../logo';
 
 const categories = ['Spices', 'Masala', 'Flours', 'Rices'];
 
@@ -18,7 +19,7 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="text-xl font-bold">DaddysKitchen</h3>
+            <Logo />
             <p className="mt-4 text-sm text-gray-400">
               Find a location nearest you,
               <br />
