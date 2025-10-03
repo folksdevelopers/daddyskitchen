@@ -75,7 +75,7 @@
     {
       "id": "about-us-hero",
       "description": "A vibrant collection of assorted spices on a wooden surface.",
-      "imageUrl": "https://images.unsplash.com/photo-1599999338622-4f0f0aa11956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhc3NvcnRlZCUyMHNwaWNlc3xlbnwwfHx8fDE3NTk1MjI5NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/about-us-image-hero.png",
       "imageHint": "assorted spices"
     },
     {

@@ -13,7 +13,7 @@ export function AboutHero() {
           <p className="mt-2 text-lg font-semibold text-accent">Taste the real Spice of Kerala</p>
         </div>
         <div className="mt-12 flex justify-center">
-          <div className="relative h-64 w-full max-w-4xl lg:h-80">
+          <div className="relative h-80 w-full max-w-4xl lg:h-96">
             <Image
               src={image.imageUrl}
               alt={image.description}
