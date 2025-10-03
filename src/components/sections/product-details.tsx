@@ -21,7 +21,7 @@ export function ProductDetails({ product }: { product: Product }) {
         <div className="rounded-2xl bg-card shadow-lg overflow-hidden p-6 sm:p-8 lg:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             
-            <div className="relative h-80 lg:h-[500px] w-full flex items-center justify-center lg:order-last">
+            <div className="relative h-80 lg:h-[500px] w-full flex items-center justify-center">
                 <div className='absolute w-full max-w-md h-full bg-primary/10 blur-3xl rounded-full -z-0' />
               <Image
                 src={product.imageUrl}
@@ -33,7 +33,7 @@ export function ProductDetails({ product }: { product: Product }) {
               />
             </div>
             
-            <div className='lg:order-first'>
+            <div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary">{product.name}</h1>
               <div className="mt-4 flex items-center gap-2">
                 <div className="flex">
