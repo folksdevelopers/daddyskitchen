@@ -10,22 +10,22 @@ export type Product = {
 };
 
 export const allProducts: Product[] = [
-  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageUrl: '/product-image-default.png', price: 5.99 },
-  { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/product-image-default.png', price: 6.99 },
-  { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'A healthy and versatile lentil for various dishes.', category: 'Herbs', imageUrl: '/product-image-default.png', price: 4.99 },
-  { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/product-image-default.png', price: 6.99 },
-  { id: '5', name: 'Chaat Masala', slug: 'chaat-masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageUrl: '/product-image-default.png', price: 7.99 },
-  { id: '6', name: 'Coriander Powder', slug: 'coriander-powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageUrl: '/product-image-default.png', price: 5.49 },
-  { id: '7', name: 'Tikka Masala', slug: 'tikka-masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageUrl: '/product-image-default.png', price: 8.99 },
-  { id: '8', name: 'Vegetable Masala', slug: 'vegetable-masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageUrl: '/product-image-default.png', price: 7.49 },
-  { id: '9', name: 'Turmeric Powder', slug: 'turmeric-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageUrl: '/product-image-default.png', price: 5.99 },
-  { id: '10', name: 'Idiyappam Powder', slug: 'idiyappam-powder-3', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/product-image-default.png', price: 6.99 },
-  { id: '11', name: 'Green Gram', slug: 'green-gram-2', description: 'A healthy and versatile lentil for various dishes.', category: 'Herbs', imageUrl: '/product-image-default.png', price: 4.99 },
-  { id: '12', name: 'Idiyappam Powder', slug: 'idiyappam-powder-4', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/product-image-default.png', price: 6.99 },
-  { id: '13', name: 'Chaat Masala', slug: 'chaat-masala-2', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageUrl: '/product-image-default.png', price: 7.99 },
-  { id: '14', name: 'Coriander Powder', slug: 'coriander-powder-2', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageUrl: '/product-image-default.png', price: 5.49 },
-  { id: '15', name: 'Tikka Masala', slug: 'tikka-masala-2', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageUrl: '/product-image-default.png', price: 8.99 },
-  { id: '16', name: 'Vegetable Masala', slug: 'vegetable-masala-2', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageUrl: '/product-image-default.png', price: 7.49 },
+  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageUrl: '/turmeric-powder.jpg', price: 5.99 },
+  { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/idiyappam-powder.jpg', price: 6.99 },
+  { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'A healthy and versatile lentil for various dishes.', category: 'Herbs', imageUrl: '/green-gram.jpg', price: 4.99 },
+  { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/idiyappam-powder-2.jpg', price: 6.99 },
+  { id: '5', name: 'Chaat Masala', slug: 'chaat-masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageUrl: '/chaat-masala.jpg', price: 7.99 },
+  { id: '6', name: 'Coriander Powder', slug: 'coriander-powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageUrl: '/coriander-powder.jpg', price: 5.49 },
+  { id: '7', name: 'Tikka Masala', slug: 'tikka-masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageUrl: '/tikka-masala.jpg', price: 8.99 },
+  { id: '8', name: 'Vegetable Masala', slug: 'vegetable-masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageUrl: '/vegetable-masala.jpg', price: 7.49 },
+  { id: '9', name: 'Turmeric Powder', slug: 'turmeric-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageUrl: '/turmeric-powder-2.jpg', price: 5.99 },
+  { id: '10', name: 'Idiyappam Powder', slug: 'idiyappam-powder-3', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/idiyappam-powder-3.jpg', price: 6.99 },
+  { id: '11', name: 'Green Gram', slug: 'green-gram-2', description: 'A healthy and versatile lentil for various dishes.', category: 'Herbs', imageUrl: '/green-gram-2.jpg', price: 4.99 },
+  { id: '12', name: 'Idiyappam Powder', slug: 'idiyappam-powder-4', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/idiyappam-powder-4.jpg', price: 6.99 },
+  { id: '13', name: 'Chaat Masala', slug: 'chaat-masala-2', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageUrl: '/chaat-masala-2.jpg', price: 7.99 },
+  { id: '14', name: 'Coriander Powder', slug: 'coriander-powder-2', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageUrl: '/coriander-powder-2.jpg', price: 5.49 },
+  { id: '15', name: 'Tikka Masala', slug: 'tikka-masala-2', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageUrl: '/tikka-masala-2.jpg', price: 8.99 },
+  { id: '16', name: 'Vegetable Masala', slug: 'vegetable-masala-2', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageUrl: '/vegetable-masala-2.jpg', price: 7.49 },
 ];
 
 
@@ -38,10 +38,10 @@ export type FeaturedProduct = {
 };
 
 export const featuredProducts: FeaturedProduct[] = [
-    { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/product-image-default.png' },
-    { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/product-image-default.png' },
-    { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/product-image-default.png' },
-    { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/product-image-default.png' },
+    { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/turmeric-powder.jpg' },
+    { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/idiyappam-powder.jpg' },
+    { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/green-gram.jpg' },
+    { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/idiyappam-powder-2.jpg' },
 ];
 
 export type Testimonial = {
