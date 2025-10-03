@@ -16,7 +16,7 @@ export function DaddyKitchenLogo({ className, ...props }: SVGProps<SVGSVGElement
         />
         <text
           x="80"
-          y="50"
+          y="60"
           fontFamily="Alegreya, serif"
           fontSize="20"
           fill="white"
@@ -24,23 +24,11 @@ export function DaddyKitchenLogo({ className, ...props }: SVGProps<SVGSVGElement
           dominantBaseline="middle"
           fontWeight="bold"
         >
-          Daddy's
+          Daddy's Kitchen
         </text>
         <text
           x="80"
-          y="70"
-          fontFamily="Alegreya, serif"
-          fontSize="20"
-          fill="white"
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fontWeight="bold"
-        >
-          Kitchen
-        </text>
-        <text
-          x="80"
-          y="90"
+          y="85"
           fontFamily="Alegreya, serif"
           fontSize="15"
           fill="white"
