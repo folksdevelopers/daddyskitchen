@@ -45,10 +45,10 @@ export function Collections() {
             </div>
             <div>
                  <p className="text-muted-foreground">
-                    Explore our top-quality spice and ingredient ranges crafted for authentic Indian cooking. Select your favorites and order directly to your doorstep.
+                    Discover our finest selection of premium Kerala spices and ingredients, meticulously crafted to bring authentic Indian flavors to your kitchen. Sourced directly from the rich spice gardens of Kerala, each ingredient captures the region’s unique aroma and potency, elevating traditional dishes with fresh, timeless flavors.
                 </p>
                  <p className="text-muted-foreground mt-4">
-                    Discover our most popular categories—perfect for every kitchen need. Order now and enjoy premium Kerala flavors delivered fresh.
+                    Explore our most popular categories, designed to suit every culinary need—from bold single spices to expertly blended masalas. Whether it’s for home cooking or professional kitchens, find your favorites and immerse yourself in the true taste of Kerala’s spice heritage.
                 </p>
             </div>
         </div>
