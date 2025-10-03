@@ -7,7 +7,7 @@ import Image from 'next/image';
 const organicFeatures = [
     {
         icon: <Carrot className="h-8 w-8 text-white" />,
-        title: 'Farm Fresh',
+        title: 'Purely Sourced',
         description: 'Straight from Kerala’s spice gardens, our ingredients are harvested at peak ripeness to capture the freshest flavor and highest natural potency.',
     },
     {

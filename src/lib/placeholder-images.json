@@ -69,7 +69,7 @@
     {
       "id": "about-us",
       "description": "Cinnamon sticks, star anise, and nutmeg.",
-      "imageUrl": "/about-us-image.jpg",
+      "imageUrl": "/about-us-image.png",
       "imageHint": "cinnamon star anise"
     },
     {
@@ -81,19 +81,19 @@
     {
       "id": "hero-bottle-1",
       "description": "Daddy's Kitchen Vegetable Masala",
-      "imageUrl": "/hero-image-1.png",
+      "imageUrl": "/hero-1.png",
       "imageHint": "spice bottle"
     },
     {
       "id": "hero-bottle-2",
       "description": "Daddy's Kitchen Tikka Masala",
-      "imageUrl": "/hero-image-2.png",
+      "imageUrl": "/hero-2.png",
       "imageHint": "spice bottle"
     },
     {
       "id": "hero-bottle-3",
       "description": "Daddy's Kitchen Vegetable Masala copy",
-      "imageUrl": "/hero-image-2.png",
+      "imageUrl": "/hero-3.png",
       "imageHint": "spice bottle"
     },
     {
