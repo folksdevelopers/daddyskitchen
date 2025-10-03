@@ -28,7 +28,7 @@ export function Hero() {
             of Spices!
           </h1>
           <p className="max-w-md text-lg text-muted-foreground">
-            A spice is a seed, fruit, root, bark, or other plant substance primarily used for flavoring or coloring food.
+            Authentic Kerala spices brought to the UAE. Premium quality masalas crafted with traditional recipes for modern kitchens.
           </p>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
             View Products
