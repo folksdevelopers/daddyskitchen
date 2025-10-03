@@ -73,7 +73,7 @@ export function Collections() {
                     <CardTitle className="font-headline text-2xl font-bold text-foreground">{collection.name}</CardTitle>
                   </CardContent>
                   <CardFooter className="flex justify-center p-6 pt-4">
-                    <Link href="/products" className="flex items-center text-accent font-semibold group">
+                    <Link href={`/products/category/${collection.name.toLowerCase()}`} className="flex items-center text-accent font-semibold group">
                         View Product
                         <ChevronRight className="h-5 w-5 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
