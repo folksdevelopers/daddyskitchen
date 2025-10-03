@@ -12,7 +12,7 @@ const organicFeatures = [
     },
     {
         icon: <BookOpen className="h-8 w-8 text-white" />,
-        title: 'Time-Honored Recipes',
+        title: 'Heritage Blends',
         description: 'Each masala blend follows centuries-old family recipes, combining spices in perfect proportions to recreate authentic Kerala taste profiles.',
     },
     {
