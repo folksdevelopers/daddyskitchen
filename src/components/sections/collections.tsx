@@ -1,4 +1,3 @@
-
 'use client';
 
 import {
@@ -47,7 +46,10 @@ export function Collections() {
             </div>
             <div>
                  <p className="text-muted-foreground">
-                    Here Are Some Of Our Best Distributed Categories. If You Want You Can Order From Here.Here Are Some Of Our Best Distributed Categories. If You Want You Can Order From Here.
+                    Explore our top-quality spice and ingredient ranges crafted for authentic Indian cooking. Select your favorites and order directly to your doorstep.
+                </p>
+                 <p className="text-muted-foreground mt-4">
+                    Discover our most popular categories—perfect for every kitchen need. Order now and enjoy premium Kerala flavors delivered fresh.
                 </p>
             </div>
         </div>
@@ -73,10 +75,10 @@ export function Collections() {
                         )}
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6">
+                  <CardContent className="p-6 pb-0 flex-grow">
                     <CardTitle className="font-headline text-2xl font-bold text-foreground">{collection.name}</CardTitle>
                   </CardContent>
-                  <CardFooter className="flex justify-center p-6 pt-0">
+                  <CardFooter className="flex justify-center p-6 pt-4">
                     <Link href="/products" className="flex items-center text-accent font-semibold group">
                         Order Now
                         <ChevronRight className="h-5 w-5 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
