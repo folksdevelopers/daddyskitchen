@@ -69,7 +69,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t border-gray-800 pt-8 flex justify-between text-sm text-gray-500">
           <p>Copyright © {year}</p>
-          <p>Site by FolksDev</p>
+          <p>Site by <a href="https://folksdev.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">FolksDev</a></p>
         </div>
       </div>
     </footer>
