@@ -14,7 +14,7 @@ const features = [
   {
     icon: <Package className="h-8 w-8" />,
     title: 'Packed with Care',
-    description: 'Each spice blend is freshly milled and carefully sealed in the UAE under strict hygiene standards to lock in maximum aroma, flavor, and nutritional value.',
+    description: 'Each spice blend is freshly milled and carefully sealed under strict hygiene standards to lock in maximum aroma, flavor, and nutritional value.',
   },
 ];
 
