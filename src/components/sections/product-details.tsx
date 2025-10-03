@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -6,6 +7,7 @@ import { StarIcon } from '../icons/star-icon';
 import { Button } from '../ui/button';
 import { Award, Leaf, Minus, Plus, ShieldBan } from 'lucide-react';
 import { useState } from 'react';
+import { cn } from '@/lib/utils';
 
 const assurances = [
   { icon: <Award className="h-8 w-8" />, text: 'High Quality' },
@@ -14,16 +16,7 @@ const assurances = [
 ];
 
 export function ProductDetails({ product }: { product: Product }) {
-  const [quantity, setQuantity] = useState(1);
-
-  const incrementQuantity = () => {
-    setQuantity(prev => Math.min(prev + 1, product.quantity));
-  };
-
-  const decrementQuantity = () => {
-    setQuantity(prev => Math.max(prev - 1, 1));
-  };
-
+  const [selectedWeight, setSelectedWeight] = useState(product.weights[0]);
 
   return (
     <section className="py-16 sm:py-24 bg-background">
@@ -57,18 +50,21 @@ export function ProductDetails({ product }: { product: Product }) {
               </div>
 
                <div className="mt-8">
-                <h3 className="text-xl font-bold text-primary">Quantity</h3>
+                <h3 className="text-xl font-bold text-primary">Available Weights</h3>
                 <div className="mt-4 flex items-center gap-4">
-                  <div className="flex items-center gap-2 rounded-full border border-input p-1">
-                    <Button variant="ghost" size="icon" className="rounded-full" onClick={decrementQuantity} disabled={quantity <= 1}>
-                      <Minus className="h-4 w-4" />
+                  {product.weights.map((weight) => (
+                    <Button
+                      key={weight}
+                      variant={selectedWeight === weight ? 'default' : 'outline'}
+                      onClick={() => setSelectedWeight(weight)}
+                      className={cn(
+                        "rounded-full px-6",
+                        selectedWeight === weight && "bg-primary text-primary-foreground"
+                      )}
+                    >
+                      {weight}
                     </Button>
-                    <span className="w-10 text-center font-bold">{quantity}</span>
-                    <Button variant="ghost" size="icon" className="rounded-full" onClick={incrementQuantity} disabled={quantity >= product.quantity}>
-                      <Plus className="h-4 w-4" />
-                    </Button>
-                  </div>
-                  <p className="text-sm text-muted-foreground">({product.quantity} available)</p>
+                  ))}
                 </div>
               </div>
 
