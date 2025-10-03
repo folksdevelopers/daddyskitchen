@@ -63,14 +63,15 @@ export function Collections() {
                      <div className="relative h-56 w-56">
                         <CollectionArc className="absolute inset-0" />
                         {image && (
-                          <Image
-                            src={image.imageUrl}
-                            alt={collection.name}
-                            data-ai-hint={image.imageHint}
-                            width={150}
-                            height={150}
-                            className="object-contain transition-transform duration-300 group-hover:scale-110 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                          />
+                          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-40 w-40 rounded-full overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-110">
+                            <Image
+                              src={image.imageUrl}
+                              alt={collection.name}
+                              data-ai-hint={image.imageHint}
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
                         )}
                     </div>
                   </CardHeader>
