@@ -66,7 +66,7 @@ export function Collections() {
                      <div className="relative h-48 w-48">
                         {image && (
                           <Image
-                            src="/Frame.png"
+                            src="/product-image-default.png"
                             alt={collection.name}
                             data-ai-hint="spice bottle"
                             fill
