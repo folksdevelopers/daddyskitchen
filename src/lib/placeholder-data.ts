@@ -4,18 +4,17 @@ export type Product = {
   name: string;
   slug: string;
   description: string;
-  category: 'Spices' | 'Blends' | 'Salts' | 'Herbs';
+  category: 'Spices' | 'Blends' | 'Salts' | 'Herbs' | 'Lentils';
   imageUrl: string;
   price: number;
 };
 
 export const allProducts: Product[] = [
   { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', category: 'Spices', imageUrl: '/turmeric-powder.jpg', price: 149.00 },
-  { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Finely milled roasted rice flour mix, specially prepared for making soft, stringy and authentic South Indian idiyappam.', category: 'Blends', imageUrl: '/idiyappam-powder.jpg', price: 85.00 },
-  { id: '3', name: 'Green Gram (Moong Dal)', slug: 'green-gram', description: 'Naturally grown whole green gram packed with protein, fiber, and essential nutrients. Suitable for curries, sprouts, and soups.', category: 'Lentils', imageUrl: '/green-gram.jpg', price: 120.00 },
+  { id: '2', name: 'Chilli Powder', slug: 'chilli-powder', description: 'Vibrant red chilli powder ground from premium dried red chillies. Adds heat, color, and depth to your dishes with its bold, fiery flavor.', category: 'Spices', imageUrl: '/chilli-powder.jpg', price: 135.00 },
+  { id: '3', name: 'Black Pepper Powder', slug: 'black-pepper-powder', description: 'Freshly ground black pepper with a sharp, pungent flavor and aromatic fragrance. Essential for enhancing the taste of any savory dish.', category: 'Spices', imageUrl: '/black-pepper-powder.jpg', price: 180.00 },
   { id: '4', name: 'Coriander Powder', slug: 'coriander-powder', description: 'Freshly ground coriander seeds that add a warm, nutty, and citrusy flavor to curries, dals, and marinades.', category: 'Spices', imageUrl: '/coriander-powder.jpg', price: 95.00 },
   { id: '5', name: 'Chaat Masala', slug: 'chaat-masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageUrl: '/chaat-masala.jpg', price: 7.99 },
-  { id: '6', name: 'Coriander Powder', slug: 'coriander-powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageUrl: '/coriander-powder.jpg', price: 5.49 },
   { id: '7', name: 'Tikka Masala', slug: 'tikka-masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageUrl: '/tikka-masala.jpg', price: 8.99 },
   { id: '8', name: 'Vegetable Masala', slug: 'vegetable-masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageUrl: '/vegetable-masala.jpg', price: 7.49 },
   { id: '9', name: 'Turmeric Powder', slug: 'turmeric-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageUrl: '/turmeric-powder-2.jpg', price: 5.99 },
@@ -38,10 +37,10 @@ export type FeaturedProduct = {
 };
 
 export const featuredProducts: FeaturedProduct[] = [
-    { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/turmeric-powder.jpg' },
-    { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/idiyappam-powder.jpg' },
-    { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/green-gram.jpg' },
-    { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', imageUrl: '/idiyappam-powder-2.jpg' },
+    { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', imageUrl: '/turmeric-powder.jpg' },
+    { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Finely milled roasted rice flour mix, specially prepared for making soft, stringy and authentic South Indian idiyappam.', imageUrl: '/idiyappam-powder.jpg' },
+    { id: '3', name: 'Green Gram (Moong Dal)', slug: 'green-gram', description: 'Naturally grown whole green gram packed with protein, fiber, and essential nutrients. Suitable for curries, sprouts, and soups.', imageUrl: '/green-gram.jpg' },
+    { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-3', description: 'A ready mix for making soft and stringy idiyappam.', imageUrl: '/idiyappam-powder-3.jpg' },
 ];
 
 export type Testimonial = {
