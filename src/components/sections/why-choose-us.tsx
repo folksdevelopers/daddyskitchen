@@ -1,17 +1,22 @@
+'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Carrot, BookOpen, Heart } from 'lucide-react';
 import Image from 'next/image';
 
 const organicFeatures = [
     {
+        icon: <Carrot className="h-8 w-8 text-white" />,
         title: 'Farm Fresh',
         description: 'Straight from Kerala’s spice gardens, our ingredients are harvested at peak ripeness to capture the freshest flavor and highest natural potency.',
     },
     {
+        icon: <BookOpen className="h-8 w-8 text-white" />,
         title: 'Time-Honored Recipes',
         description: 'Each masala blend follows centuries-old family recipes, combining spices in perfect proportions to recreate authentic Kerala taste profiles.',
     },
     {
+        icon: <Heart className="h-8 w-8 text-white" />,
         title: 'Flavor You Love',
         description: 'Our expert milling and packaging process locks in rich aroma and bold flavor, ensuring every dish you prepare delights the senses.',
     },
@@ -28,7 +33,9 @@ export function WhyChooseUs() {
               <div key={index} className="flex items-start gap-4">
                 <div className="flex-shrink-0">
                   <div className="h-16 w-16 rounded-full bg-accent/20 flex items-center justify-center">
-                     <div className="h-12 w-12 rounded-full bg-accent"></div>
+                     <div className="h-12 w-12 rounded-full bg-accent flex items-center justify-center">
+                        {feature.icon}
+                     </div>
                   </div>
                 </div>
                 <div>
