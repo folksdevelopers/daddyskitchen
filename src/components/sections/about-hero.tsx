@@ -13,7 +13,7 @@ export function AboutHero() {
           <p className="mt-2 text-lg font-semibold text-accent">Taste the real Spice of Kerala</p>
         </div>
         <div className="mt-12 flex justify-center">
-          <div className="relative h-80 w-full max-w-4xl lg:h-96">
+          <div className="relative h-80 w-full max-w-4xl lg:h-[500px]">
             <Image
               src={image.imageUrl}
               alt={image.description}
@@ -25,12 +25,7 @@ export function AboutHero() {
         </div>
         <div className="mt-12 max-w-4xl mx-auto text-center">
           <p className="text-base leading-7 text-muted-foreground">
-            DaddysKitchen is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-            also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-            desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            At Daddy's Kitchen, we bring the authentic flavors of Kerala's spice heritage directly to your kitchen. Our journey began with a passion for preserving traditional recipes and a commitment to sourcing the finest, purest spices from the lush gardens of Kerala. We believe that great food starts with great ingredients, which is why we meticulously select, grind, and blend our spices to capture their natural aroma and flavor. Join us in celebrating a legacy of taste that has been cherished for generations.
           </p>
         </div>
       </div>
