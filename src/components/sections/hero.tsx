@@ -28,7 +28,7 @@ export function Hero() {
             of Spices!
           </h1>
           <p className="max-w-md text-lg text-muted-foreground">
-            Authentic Kerala spices brought to the UAE. Premium quality masalas crafted with traditional recipes for modern kitchens.
+            Authentic Kerala spices delivered worldwide. Premium quality masalas crafted with traditional recipes for modern kitchens.
           </p>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
             View Products
