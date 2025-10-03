@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useEffect, useState } from 'react';
 
+const categories = ['Spices', 'Masala', 'Flours', 'Rices'];
+
 export function Footer() {
   const [year, setYear] = useState<number>(new Date().getFullYear());
 
@@ -28,17 +30,21 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="text-lg font-bold">Useful links</h3>
+            <h3 className="text-lg font-bold">Categories</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white">New Products</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Best Sellers</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Bundle & Save</a></li>
+              {categories.map((category) => (
+                <li key={category}>
+                  <a href="/products" className="text-gray-400 hover:text-white">
+                    {category}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-bold">Information</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white">Contact Us</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white">Contact Us</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white">Terms & Conditions</a></li>
             </ul>
