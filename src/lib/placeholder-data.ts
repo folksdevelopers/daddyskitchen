@@ -98,13 +98,13 @@ export const socialFeed: SocialFeedItem[] = [
     id: '1',
     platform: 'twitter',
     author: 'faizal',
-    text: 'i prefer @daddyskitchen curry masala.',
+    text: 'The flavors from @daddyskitchen are a game-changer! My curries have never tasted so authentic. #keralaspices',
   },
   {
     id: '2',
     platform: 'twitter',
-    author: 'faizal',
-    text: 'i prefer @daddyskitchen curry masala.',
+    author: 'sara_likes_food',
+    text: 'Just tried the Sambar powder from @daddyskitchen and it’s incredible. Tastes just like my grandmother’s recipe!',
   },
   {
     id: '3',
