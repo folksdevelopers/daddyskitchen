@@ -3,7 +3,6 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { CategoryProductList } from '@/components/sections/category-product-list';
 import { allProducts } from '@/lib/placeholder-data';
-import { Collections } from '@/components/sections/collections';
 
 export default function CategoryPage({ params }: { params: { categoryName: string } }) {
   const categoryName = decodeURIComponent(params.categoryName);
@@ -21,7 +20,6 @@ export default function CategoryPage({ params }: { params: { categoryName: strin
             </div>
           </div>
         </section>
-        <Collections />
         <CategoryProductList products={products} />
       </main>
       <Footer />
