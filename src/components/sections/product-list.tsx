@@ -9,7 +9,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { allProducts } from '@/lib/placeholder-data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import {
@@ -24,7 +23,6 @@ import { Pagination, PaginationContent, PaginationItem, PaginationLink, Paginati
 import Link from 'next/link';
 
 export function ProductList() {
-  const images = PlaceHolderImages;
 
   return (
     <section className="py-12 bg-secondary/30">
@@ -51,20 +49,17 @@ export function ProductList() {
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {allProducts.slice(0, 12).map((product) => {
-            const image = images.find(img => img.id === product.imageId);
             return (
               <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center">
                 <CardHeader className="p-6">
                   <div className="relative h-56 w-full">
-                    {image && (
-                      <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        data-ai-hint={image.imageHint}
-                        fill
-                        className="object-contain transition-transform duration-300 group-hover:scale-105"
-                      />
-                    )}
+                    <Image
+                      src={product.imageUrl}
+                      alt={product.name}
+                      data-ai-hint={product.name}
+                      fill
+                      className="object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
                   </div>
                 </CardHeader>
                 <CardContent className="flex-1 p-6 pt-0">

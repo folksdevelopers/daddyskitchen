@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import type { Product } from '@/lib/placeholder-data';
 import { StarIcon } from '../icons/star-icon';
 import { Button } from '../ui/button';
@@ -14,7 +13,6 @@ const assurances = [
 ];
 
 export function ProductDetails({ product }: { product: Product }) {
-  const image = PlaceHolderImages.find(img => img.id === product.imageId);
 
   return (
     <section className="py-16 sm:py-24 bg-background">
@@ -53,16 +51,14 @@ export function ProductDetails({ product }: { product: Product }) {
             </div>
             <div className="relative h-80 lg:h-[500px] w-full flex items-center justify-center">
                 <div className='absolute w-[400px] h-[400px] bg-primary/10 blur-3xl rounded-full -z-0' />
-              {image && (
-                <Image
-                  src={image.imageUrl}
-                  alt={image.description}
-                  data-ai-hint={image.imageHint}
-                  width={400}
-                  height={400}
-                  className="object-contain"
-                />
-              )}
+              <Image
+                src={product.imageUrl}
+                alt={product.name}
+                data-ai-hint={product.name}
+                width={400}
+                height={400}
+                className="object-contain"
+              />
             </div>
           </div>
         </div>

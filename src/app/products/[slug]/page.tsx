@@ -5,7 +5,6 @@ import { Footer } from '@/components/layout/footer';
 import { ProductDetails } from '@/components/sections/product-details';
 import { RelatedProducts } from '@/components/sections/related-products';
 import { allProducts } from '@/lib/placeholder-data';
-import type { Product } from '@/lib/placeholder-data';
 
 export default function SingleProductPage({ params }: { params: { slug: string } }) {
   console.log('--- Product Page Log ---');

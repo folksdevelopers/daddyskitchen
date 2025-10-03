@@ -9,14 +9,11 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { featuredProducts } from '@/lib/placeholder-data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 
 export function Products() {
-  const images = PlaceHolderImages;
-
   return (
     <section id="products" className="py-16 sm:py-24 bg-secondary/50">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -29,20 +26,17 @@ export function Products() {
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {featuredProducts.map((product) => {
-            const image = images.find(img => img.id === product.imageId);
             return (
               <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center">
                 <CardHeader className="p-6">
                   <div className="relative h-56 w-full">
-                    {image && (
-                      <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        data-ai-hint={image.imageHint}
-                        fill
-                        className="object-contain transition-transform duration-300 group-hover:scale-105"
-                      />
-                    )}
+                    <Image
+                      src={product.imageUrl}
+                      alt={product.name}
+                      data-ai-hint={product.name}
+                      fill
+                      className="object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
                   </div>
                 </CardHeader>
                 <CardContent className="flex-1 p-6 pt-0">
