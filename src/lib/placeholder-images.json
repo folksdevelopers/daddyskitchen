@@ -9,8 +9,8 @@
     {
       "id": "hero-2",
       "description": "A spoonful of golden turmeric powder.",
-      "imageUrl": "https://images.unsplash.com/photo-1698943510650-9232c98a5328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0dXJtZXJpYyUyMHBvd2RlcnxlbnwwfHx8fDE3NTkyMDIyNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "turmeric powder"
+      "imageUrl": "/hero-image-2.png",
+      "imageHint": "spice bottle"
     },
     {
       "id": "hero-3",
@@ -39,31 +39,31 @@
     {
       "id": "product-taco-blend",
       "description": "A zesty taco seasoning blend.",
-      "imageUrl": "https://images.unsplash.com/photo-1717070397656-29f04e19a5fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0YWNvJTIwc2Vhc29uaW5nfGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1717070397656-29f04e19a5fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0YWNvJTIwc2Vhc29uaW5nfGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "taco seasoning"
     },
     {
       "id": "product-himalayan-salt",
       "description": "Coarse pink Himalayan salt.",
-      "imageUrl": "https://images.unsplash.com/photo-1614759258004-39da973d3268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoaW1hbGF5YW4lMjBzYWx0fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614759258004-39da973d3268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoaW1hbGF5YW4lMjBzYWx0fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "himalayan salt"
     },
     {
       "id": "product-smoked-salt",
       "description": "Smoked sea salt flakes.",
-      "imageUrl": "https://images.unsplash.com/photo-1646722391295-0bfc1035fb99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbW9rZWQlMjBzYWx0fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1646722391295-0bfc1035fb99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbW9rZWQlMjBzYWx0fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "smoked salt"
     },
     {
       "id": "product-rosemary",
       "description": "Dried rosemary leaves.",
-      "imageUrl": "https://images.unsplash.com/photo-1711919529153-aff395cb268d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkcmllZCUyMHJvc2VtYXJ5fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1711919529153-aff395cb268d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkcmllZCUyMHJvc2VtYXJ5fGVufDB8fHx8MTc1OTI1ODkzMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dried rosemary"
     },
     {
       "id": "product-oregano",
       "description": "Dried oregano in a wooden spoon.",
-      "imageUrl": "https://images.unsplash.com/photo-1632670492791-e65caa3f7926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkcmllZCUyMG9yZWdhbm98ZW58MHx8fHwxNzU5MjU4OTMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1632670492791-e65caa3f7926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkcmllZCUyMG9yZWdhbm98ZW58MHx8fHwxNzU5MjU4OTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dried oregano"
     },
     {
@@ -87,13 +87,13 @@
     {
       "id": "hero-bottle-2",
       "description": "Daddy's Kitchen Tikka Masala",
-      "imageUrl": "/product-image-default.png",
+      "imageUrl": "/hero-image-2.png",
       "imageHint": "spice bottle"
     },
     {
       "id": "hero-bottle-3",
       "description": "Daddy's Kitchen Vegetable Masala copy",
-      "imageUrl": "https://images.unsplash.com/photo-1741521312102-b1ff2388d3c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/hero-image-2.png",
       "imageHint": "spice bottle"
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "featured-chaat",
       "description": "Daddy's Kitchen Chaat Masala",
-      "imageUrl": "https://images.unsplash.com/photo-1741521312102-b1ff2388d3c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1741521312102-b1ff2388d3c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcGljZSUyMGJvdHRsZXxlbnwwfHx8fDE3NTkyNTk2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "chaat masala"
     },
     {
@@ -147,31 +147,31 @@
     {
       "id": "contact-map",
       "description": "A stylized map of a city, focusing on the New York area.",
-      "imageUrl": "https://images.unsplash.com/photo-1476385822777-70eabacbd41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc1OTE3MTkxN3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1476385822777-70eabacbd41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc1OTE3MTkxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city map"
     },
     {
       "id": "collection-spices",
       "description": "A variety of colorful spices in spoons.",
-      "imageUrl": "https://images.unsplash.com/photo-1598514982901-ae627c29a234?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcGljZXMlMjBwb3dkZXJ8ZW58MHx8fHwxNzYwMzU2NDIyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1598514982901-ae627c29a234?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcGljZXMlMjBwb3dkZXJ8ZW58MHx8fHwxNzYwMzU2NDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "spices powder"
     },
     {
       "id": "collection-masala",
       "description": "A blend of Indian masala spices in a bowl.",
-      "imageUrl": "https://images.unsplash.com/photo-1629202652445-56c6123c524b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtYXNhbGF8ZW58MHx8fHwxNzYwMzU2NDY3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629202652445-56c6123c524b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtYXNhbGF8ZW58MHx8fHwxNzYwMzU2NDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "indian masala"
     },
     {
       "id": "collection-flours",
       "description": "Different types of flour in bowls.",
-      "imageUrl": "https://images.unsplash.com/photo-1627485785002-4b31a894a4c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbG91cnxlbnwwfHx8fDE3NjAzNTY0OTN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627485785002-4b31a894a4c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbG91cnxlbnwwfHx8fDE3NjAzNTY0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "flour"
     },
     {
       "id": "collection-rices",
       "description": "Different types of rice in bowls.",
-      "imageUrl": "https://images.unsplash.com/photo-1586201375822-522614b6e7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHwjcmljZXxlbnwwfHx8fDE3NjAzNTY1MTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1586201375822-522614b6e7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHwjcmljZXxlbnwwfHx8fDE3NjAzNTY1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "rice"
     }
   ]
