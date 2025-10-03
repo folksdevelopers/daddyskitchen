@@ -18,22 +18,22 @@ export function ProductDetails({ product }: { product: Product }) {
   return (
     <section className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl bg-card shadow-lg overflow-hidden p-6 sm:p-8 lg:p-12">
+        <div className="rounded-2xl bg-card shadow-lg overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             
-            <div className="relative h-80 lg:h-[500px] w-full flex items-center justify-center">
-                <div className='absolute w-full max-w-md h-full bg-primary/10 blur-3xl rounded-full -z-0' />
+            <div className="relative h-80 lg:h-[500px] w-full flex items-center justify-center p-6 sm:p-8 lg:p-12 order-first lg:order-last">
+                <div className='absolute inset-0 w-full h-full bg-primary/10 blur-3xl rounded-full -z-0' />
               <Image
                 src={product.imageUrl}
                 alt={product.name}
                 data-ai-hint={product.name}
                 width={400}
                 height={400}
-                className="object-contain"
+                className="object-contain w-full h-auto max-w-md"
               />
             </div>
             
-            <div>
+            <div className="p-6 sm:p-8 lg:p-12">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary">{product.name}</h1>
               <div className="mt-4 flex items-center gap-2">
                 <div className="flex">
