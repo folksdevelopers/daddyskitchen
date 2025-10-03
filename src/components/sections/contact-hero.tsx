@@ -11,7 +11,7 @@ export function ContactHero() {
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">Keep in Touch with Us</h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            We're talking about Spices, of course – and we've got a bouquet of spices for yourself or someone you love.
+            Have a question, a comment, or just want to talk about spices? We'd love to hear from you. Drop us a line below.
           </p>
         </div>
         <div className="mt-12 flex justify-center">
