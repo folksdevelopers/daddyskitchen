@@ -10,10 +10,10 @@ export type Product = {
 };
 
 export const allProducts: Product[] = [
-  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageUrl: '/turmeric-powder.jpg', price: 5.99 },
-  { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/idiyappam-powder.jpg', price: 6.99 },
-  { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'A healthy and versatile lentil for various dishes.', category: 'Herbs', imageUrl: '/green-gram.jpg', price: 4.99 },
-  { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageUrl: '/idiyappam-powder-2.jpg', price: 6.99 },
+  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', category: 'Spices', imageUrl: '/turmeric-powder.jpg', price: 149.00 },
+  { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Finely milled roasted rice flour mix, specially prepared for making soft, stringy and authentic South Indian idiyappam.', category: 'Blends', imageUrl: '/idiyappam-powder.jpg', price: 85.00 },
+  { id: '3', name: 'Green Gram (Moong Dal)', slug: 'green-gram', description: 'Naturally grown whole green gram packed with protein, fiber, and essential nutrients. Suitable for curries, sprouts, and soups.', category: 'Lentils', imageUrl: '/green-gram.jpg', price: 120.00 },
+  { id: '4', name: 'Coriander Powder', slug: 'coriander-powder', description: 'Freshly ground coriander seeds that add a warm, nutty, and citrusy flavor to curries, dals, and marinades.', category: 'Spices', imageUrl: '/coriander-powder.jpg', price: 95.00 },
   { id: '5', name: 'Chaat Masala', slug: 'chaat-masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageUrl: '/chaat-masala.jpg', price: 7.99 },
   { id: '6', name: 'Coriander Powder', slug: 'coriander-powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageUrl: '/coriander-powder.jpg', price: 5.49 },
   { id: '7', name: 'Tikka Masala', slug: 'tikka-masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageUrl: '/tikka-masala.jpg', price: 8.99 },
