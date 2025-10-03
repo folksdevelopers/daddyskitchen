@@ -11,6 +11,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
+import { CollectionArc } from '../collection-arc';
 
 const collections = [
   {
@@ -59,21 +60,24 @@ export function Collections() {
             return (
               <Card key={collection.name} className="group flex flex-col overflow-hidden rounded-2xl shadow-none border-none bg-transparent text-center h-full">
                   <CardHeader className="p-0 relative flex-1 flex items-center justify-center">
-                    <div className="relative h-56 w-full">
+                    <div className="relative h-64 w-full">
                         {image && (
-                          <div className="relative h-48 w-full rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105">
-                            <Image
-                              src={image.imageUrl}
-                              alt={collection.name}
-                              data-ai-hint={image.imageHint}
-                              fill
-                              className="object-cover"
-                            />
+                          <div className="absolute inset-0 top-8">
+                            <CollectionArc className='absolute inset-0' />
+                            <div className="absolute top-8 left-1/2 -translate-x-1/2 w-36 h-36 rounded-full overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105">
+                                <Image
+                                src={image.imageUrl}
+                                alt={collection.name}
+                                data-ai-hint={image.imageHint}
+                                fill
+                                className="object-cover"
+                                />
+                            </div>
                           </div>
                         )}
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6 pb-0 flex-grow">
+                  <CardContent className="p-6 pb-0 flex-grow pt-16">
                     <CardTitle className="font-headline text-2xl font-bold text-foreground">{collection.name}</CardTitle>
                   </CardContent>
                   <CardFooter className="flex justify-center p-6 pt-4">
