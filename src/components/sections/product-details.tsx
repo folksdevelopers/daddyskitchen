@@ -69,7 +69,7 @@ export function ProductDetails({ product }: { product: Product }) {
               </div>
 
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-lg">
-                Buy Now
+                Enquire Now
               </Button>
             </div>
             <div className="relative h-80 lg:h-[500px] w-full flex items-center justify-center">
