@@ -26,19 +26,14 @@ export function ContactFormSection() {
             <div>
               <h3 className="text-xl font-bold text-primary">Address</h3>
               <p className="mt-2 text-muted-foreground">
-                3245 Abbot Kinney BLVD –<br />
-                PH Venice, CA 124
-              </p>
-               <p className="mt-2 text-muted-foreground">
-                3245 Abbot Kinney BLVD –<br />
-                PH Venice, CA 124
+                #6, Syndia Dhirani Building, Jurf Industria Area, Ajman.
               </p>
               <Button variant="link" className="px-0 mt-2 text-primary">Get Direction</Button>
             </div>
             <div className="mt-8">
               <h3 className="text-xl font-bold text-primary">Contact</h3>
-              <p className="mt-2 text-muted-foreground">+91 9747374062</p>
-              <p className="text-muted-foreground">hello@daddyskithcen.com</p>
+              <p className="mt-2 text-muted-foreground">Ph: +971 6 6786779</p>
+              <p className="text-muted-foreground">Email: info@daddysfoodstuff.com</p>
             </div>
           </div>
         </div>
