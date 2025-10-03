@@ -66,9 +66,9 @@ export function Collections() {
                      <div className="relative h-48 w-48">
                         {image && (
                           <Image
-                            src="/product-image-default.png"
+                            src={image.imageUrl}
                             alt={collection.name}
-                            data-ai-hint="spice bottle"
+                            data-ai-hint={image.imageHint}
                             fill
                             className="object-contain transition-transform duration-300 group-hover:scale-110"
                           />

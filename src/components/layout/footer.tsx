@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { useEffect, useState } from 'react';
 
 export function Footer() {
-  const [year, setYear] = useState(new Date().getFullYear());
+  const [year, setYear] = useState<number | null>(null);
 
   useEffect(() => {
     setYear(new Date().getFullYear());
@@ -61,7 +61,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-800 pt-8 flex justify-between text-sm text-gray-500">
-          <p>Copyright © {year}</p>
+          <p>Copyright © {year || new Date().getFullYear()}</p>
           <p>Site by FolksDev</p>
         </div>
       </div>
