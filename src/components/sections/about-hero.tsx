@@ -12,14 +12,14 @@ export function AboutHero() {
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">About US</h1>
           <p className="mt-2 text-lg font-semibold text-accent">Taste the real Spice of Kerala</p>
         </div>
-        <div className="mt-12 flex justify-center">
-          <div className="relative h-80 w-full max-w-4xl lg:h-[500px]">
+        <div className="mt-12">
+          <div className="relative h-80 w-full lg:h-[500px] overflow-hidden rounded-2xl">
             <Image
               src={image.imageUrl}
               alt={image.description}
               data-ai-hint={image.imageHint}
               fill
-              className="object-contain"
+              className="object-cover"
             />
           </div>
         </div>
