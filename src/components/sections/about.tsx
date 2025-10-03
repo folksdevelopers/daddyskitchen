@@ -25,10 +25,10 @@ export function About() {
                     <h2 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">About Us</h2>
                     <p className="mt-2 text-lg font-semibold text-accent">Taste the Real Spice of Kerala</p>
                     <p className="mt-6 text-base leading-7 text-muted-foreground">
-                        Daddy’s Kitchen Masala is the UAE’s premier Indian spice company, operated by Natural International General Trading LLC in Sharjah. Our mission is to bring the authentic flavors of Kerala’s spice heritage to Middle Eastern kitchens.
+                        Daddy’s Kitchen Masala is a premier Indian spice company with a mission to bring the authentic flavors of Kerala’s spice heritage to kitchens worldwide.
                     </p>
                     <p className="mt-4 text-base leading-7 text-muted-foreground">
-                        We source the finest spices directly from Kerala’s spice gardens and process them locally under strict UAE quality standards. Every blend is crafted using traditional recipes passed down through generations, ensuring you experience the true taste of home with every meal. We’ve earned the trust of over 15,000 satisfied customers by delivering purity, freshness, and genuine flavor in every pack.
+                        We source the finest spices directly from Kerala’s lush gardens and craft each blend using traditional, time-honored recipes. Our commitment to purity, freshness, and genuine flavor has earned the trust of over 15,000 satisfied customers. Experience the true taste of home with every meal.
                     </p>
                 </div>
             </div>
