@@ -1,8 +1,8 @@
-import { Leaf, Globe, Package, Award } from 'lucide-react';
+import { Leaf, Globe, Package } from 'lucide-react';
 
 const features = [
   {
-    icon: <Award className="h-8 w-8" />,
+    icon: <Leaf className="h-8 w-8" />,
     title: '100% Natural',
     description: 'We source the finest Kerala spices grown using sustainable, organic farming methods, with no artificial colors, additives, or preservatives.',
   },
