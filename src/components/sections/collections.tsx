@@ -40,7 +40,8 @@ export function Collections() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-12">
             <div className='pb-4'>
                  <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                    Our Product <span className='text-primary'>Categories</span>
+                    <span className="block">Our Product</span>
+                    <span className="block text-primary">Categories</span>
                 </h2>
             </div>
             <div>
