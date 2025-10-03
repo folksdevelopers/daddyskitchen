@@ -3,7 +3,6 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useEffect, useState } from 'react';
-import { Logo } from '../logo';
 
 const categories = ['Spices', 'Masala', 'Flours', 'Rices'];
 
@@ -19,7 +18,7 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Logo />
+            <h3 className="text-xl font-bold">Daddys Foodstuff Trading LLC</h3>
             <p className="mt-4 text-sm text-gray-400">
               Discover a world of flavor, from our
               <br />
