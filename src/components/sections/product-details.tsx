@@ -29,10 +29,10 @@ export function ProductDetails({ product }: { product: Product }) {
                         <StarIcon key={i} className="h-5 w-5" />
                     ))}
                 </div>
-                <span className="text-2xl font-bold text-foreground">60.00Rs</span>
+                <span className="text-2xl font-bold text-foreground">{product.price.toFixed(2)}Rs</span>
               </div>
               <p className="mt-6 text-base leading-7 text-muted-foreground">
-                Turmeric powder is a bright yellow spice which is made from dry Turmeric Rhizomes and is always used in dried powdered form. Turmeric's main ingredient is 'curcumin' which exhibits a wide range of medicinal purposes. Turmeric is useful for its colour.
+                {product.description}
               </p>
               <div className="mt-8">
                 <h3 className="text-xl font-bold text-primary">Our Assurance</h3>

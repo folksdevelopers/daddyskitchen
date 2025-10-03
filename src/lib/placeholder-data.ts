@@ -5,25 +5,26 @@ export type Product = {
   description: string;
   category: 'Spices' | 'Blends' | 'Salts' | 'Herbs';
   imageId: string;
+  price: number;
 };
 
 export const allProducts: Product[] = [
-  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander' },
-  { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-chaat' },
-  { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Herbs', imageId: 'featured-tikka' },
-  { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-vegetable' },
-  { id: '5', name: 'Chaat Masala', slug: 'chaat-masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat' },
-  { id: '6', name: 'Coriander Powder', slug: 'coriander-powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander' },
-  { id: '7', name: 'Tikka Masala', slug: 'tikka-masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka' },
-  { id: '8', name: 'Vegetable Masala', slug: 'vegetable-masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable' },
-  { id: '9', name: 'Turmeric Powder', slug: 'turmeric-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander' },
-  { id: '10', name: 'Idiyappam Powder', slug: 'idiyappam-powder-3', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-chaat' },
-  { id: '11', name: 'Green Gram', slug: 'green-gram-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Herbs', imageId: 'featured-tikka' },
-  { id: '12', name: 'Idiyappam Powder', slug: 'idiyappam-powder-4', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-vegetable' },
-  { id: '13', name: 'Chaat Masala', slug: 'chaat-masala-2', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat' },
-  { id: '14', name: 'Coriander Powder', slug: 'coriander-powder-2', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander' },
-  { id: '15', name: 'Tikka Masala', slug: 'tikka-masala-2', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka' },
-  { id: '16', name: 'Vegetable Masala', slug: 'vegetable-masala-2', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable' },
+  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander', price: 5.99 },
+  { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageId: 'featured-chaat', price: 6.99 },
+  { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'A healthy and versatile lentil for various dishes.', category: 'Herbs', imageId: 'featured-tikka', price: 4.99 },
+  { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageId: 'featured-vegetable', price: 6.99 },
+  { id: '5', name: 'Chaat Masala', slug: 'chaat-masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat', price: 7.99 },
+  { id: '6', name: 'Coriander Powder', slug: 'coriander-powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander', price: 5.49 },
+  { id: '7', name: 'Tikka Masala', slug: 'tikka-masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka', price: 8.99 },
+  { id: '8', name: 'Vegetable Masala', slug: 'vegetable-masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable', price: 7.49 },
+  { id: '9', name: 'Turmeric Powder', slug: 'turmeric-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander', price: 5.99 },
+  { id: '10', name: 'Idiyappam Powder', slug: 'idiyappam-powder-3', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageId: 'featured-chaat', price: 6.99 },
+  { id: '11', name: 'Green Gram', slug: 'green-gram-2', description: 'A healthy and versatile lentil for various dishes.', category: 'Herbs', imageId: 'featured-tikka', price: 4.99 },
+  { id: '12', name: 'Idiyappam Powder', slug: 'idiyappam-powder-4', description: 'A ready mix for making soft and stringy idiyappam.', category: 'Blends', imageId: 'featured-vegetable', price: 6.99 },
+  { id: '13', name: 'Chaat Masala', slug: 'chaat-masala-2', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat', price: 7.99 },
+  { id: '14', name: 'Coriander Powder', slug: 'coriander-powder-2', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander', price: 5.49 },
+  { id: '15', name: 'Tikka Masala', slug: 'tikka-masala-2', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka', price: 8.99 },
+  { id: '16', name: 'Vegetable Masala', slug: 'vegetable-masala-2', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable', price: 7.49 },
 ];
 
 

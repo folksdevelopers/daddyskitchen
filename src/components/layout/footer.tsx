@@ -1,7 +1,16 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { useEffect, useState } from 'react';
 
 export function Footer() {
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -52,7 +61,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-800 pt-8 flex justify-between text-sm text-gray-500">
-          <p>Copyright © {new Date().getFullYear()}</p>
+          <p>Copyright © {year}</p>
           <p>Site by FolksDev</p>
         </div>
       </div>
