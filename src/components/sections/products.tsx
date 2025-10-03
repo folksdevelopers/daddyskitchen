@@ -8,16 +8,10 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { featuredProducts } from '@/lib/placeholder-data';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import Link from 'next/link';
-
-const featuredProducts = [
-    { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', imageUrl: '/turmeric-powder.jpg' },
-    { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Finely milled roasted rice flour mix, specially prepared for making soft, stringy and authentic South Indian idiyappam.', imageUrl: '/idiyappam-powder.jpg' },
-    { id: '3', name: 'Green Gram (Moong Dal)', slug: 'green-gram', description: 'Naturally grown whole green gram packed with protein, fiber, and essential nutrients. Suitable for curries, sprouts, and soups.', imageUrl: '/green-gram.jpg' },
-    { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-3', description: 'A ready mix for making soft and stringy idiyappam.', imageUrl: '/idiyappam-powder-3.jpg' },
-];
 
 export function Products() {
   return (
