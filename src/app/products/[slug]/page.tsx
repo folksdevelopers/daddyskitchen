@@ -5,8 +5,8 @@ import { RelatedProducts } from '@/components/sections/related-products';
 import { allProducts } from '@/lib/placeholder-data';
 import type { Product } from '@/lib/placeholder-data';
 
-export default function SingleProductPage({ params }: { params: { id: string } }) {
-  const product = allProducts.find(p => p.id === params.id);
+export default function SingleProductPage({ params }: { params: { slug: string } }) {
+  const product = allProducts.find(p => p.slug === params.slug);
 
   if (!product) {
     return (

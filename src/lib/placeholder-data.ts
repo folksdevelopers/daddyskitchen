@@ -1,43 +1,45 @@
 export type Product = {
   id: string;
   name: string;
+  slug: string;
   description: string;
   category: 'Spices' | 'Blends' | 'Salts' | 'Herbs';
   imageId: string;
 };
 
 export const allProducts: Product[] = [
-  { id: '1', name: 'Turmeric Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander' },
-  { id: '2', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-chaat' },
-  { id: '3', name: 'Green Gram', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Herbs', imageId: 'featured-tikka' },
-  { id: '4', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-vegetable' },
-  { id: '5', name: 'Chaat Masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat' },
-  { id: '6', name: 'Coriander Powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander' },
-  { id: '7', name: 'Tikka Masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka' },
-  { id: '8', name: 'Vegetable Masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable' },
-  { id: '9', name: 'Turmeric Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander' },
-  { id: '10', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-chaat' },
-  { id: '11', name: 'Green Gram', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Herbs', imageId: 'featured-tikka' },
-  { id: '12', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-vegetable' },
-  { id: '13', name: 'Chaat Masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat' },
-  { id: '14', name: 'Coriander Powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander' },
-  { id: '15', name: 'Tikka Masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka' },
-  { id: '16', name: 'Vegetable Masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable' },
+  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander' },
+  { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-chaat' },
+  { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Herbs', imageId: 'featured-tikka' },
+  { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-vegetable' },
+  { id: '5', name: 'Chaat Masala', slug: 'chaat-masala', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat' },
+  { id: '6', name: 'Coriander Powder', slug: 'coriander-powder', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander' },
+  { id: '7', name: 'Tikka Masala', slug: 'tikka-masala', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka' },
+  { id: '8', name: 'Vegetable Masala', slug: 'vegetable-masala', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable' },
+  { id: '9', name: 'Turmeric Powder', slug: 'turmeric-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Spices', imageId: 'featured-coriander' },
+  { id: '10', name: 'Idiyappam Powder', slug: 'idiyappam-powder-3', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-chaat' },
+  { id: '11', name: 'Green Gram', slug: 'green-gram-2', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Herbs', imageId: 'featured-tikka' },
+  { id: '12', name: 'Idiyappam Powder', slug: 'idiyappam-powder-4', description: 'Turmeric is the spice that gives curry its yellow color', category: 'Blends', imageId: 'featured-vegetable' },
+  { id: '13', name: 'Chaat Masala', slug: 'chaat-masala-2', description: 'A flavorful Indian spice blend for snacks.', category: 'Blends', imageId: 'featured-chaat' },
+  { id: '14', name: 'Coriander Powder', slug: 'coriander-powder-2', description: 'A versatile ground spice for various dishes.', category: 'Spices', imageId: 'featured-coriander' },
+  { id: '15', name: 'Tikka Masala', slug: 'tikka-masala-2', description: 'A classic blend for creamy, spiced curry.', category: 'Blends', imageId: 'featured-tikka' },
+  { id: '16', name: 'Vegetable Masala', slug: 'vegetable-masala-2', description: 'An aromatic mix for vegetable-based meals.', category: 'Blends', imageId: 'featured-vegetable' },
 ];
 
 
 export type FeaturedProduct = {
   id: string;
   name: string;
+  slug: string;
   description: string;
   imageId: string;
 };
 
 export const featuredProducts: FeaturedProduct[] = [
-    { id: '1', name: 'Turmeric Powder', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-coriander' },
-    { id: '2', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-chaat' },
-    { id: '3', name: 'Green Gram', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-tikka' },
-    { id: '4', name: 'Idiyappam Powder', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-vegetable' },
+    { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-coriander' },
+    { id: '2', name: 'Idiyappam Powder', slug: 'idiyappam-powder', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-chaat' },
+    { id: '3', name: 'Green Gram', slug: 'green-gram', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-tikka' },
+    { id: '4', name: 'Idiyappam Powder', slug: 'idiyappam-powder-2', description: 'Turmeric is the spice that gives curry its yellow color', imageId: 'featured-vegetable' },
 ];
 
 export type Testimonial = {
@@ -134,7 +136,7 @@ export const videoTestimonial: VideoTestimonial = {
 
 
 export type HeroSlide = {
-  id: string;
+  id:string;
   imageId: string;
 };
 

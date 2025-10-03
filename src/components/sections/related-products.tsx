@@ -56,7 +56,7 @@ export function RelatedProducts({ products }: { products: Product[] }) {
                 </CardContent>
                 <CardFooter className="flex justify-center p-6 pt-0">
                    <Button asChild size="lg" className="bg-primary/90 hover:bg-primary text-primary-foreground rounded-full px-8">
-                        <Link href={`/products/${product.id}`}>
+                        <Link href={`/products/${product.slug}`}>
                             Check Out
                         </Link>
                     </Button>
