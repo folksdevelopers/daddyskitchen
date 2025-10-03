@@ -21,9 +21,9 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-4 text-sm text-gray-400">
-              Find a location nearest you,
+              Discover a world of flavor, from our
               <br />
-              See our Stores.
+              kitchen to yours.
             </p>
             <div className="mt-4 space-y-2 text-sm">
               <p>+91 9747374062</p>
