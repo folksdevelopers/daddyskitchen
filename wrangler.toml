@@ -1,0 +1,3 @@
+name = "daddyskitchen"
+main = ".vercel/output/functions/[[path]].func/index.js"
+compatibility_date = "2025-10-05"
