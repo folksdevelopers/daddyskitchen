@@ -8,12 +8,14 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { featuredProducts } from '@/lib/placeholder-data';
+import { allProducts } from '@/lib/placeholder-data';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 
 export function Products() {
+  const featuredProducts = allProducts.slice(0, 4);
+
   return (
     <section id="products" className="py-16 sm:py-24 bg-secondary/50">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -46,7 +48,7 @@ export function Products() {
                     <span className="w-3 h-1 bg-muted rounded-full"></span>
                     <span className="w-3 h-1 bg-muted rounded-full"></span>
                   </div>
-                  <CardDescription className="mt-4 text-base text-muted-foreground">{product.description}</CardDescription>
+                  <CardDescription className="mt-4 text-base text-muted-foreground">{product.minDescription}</CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-center p-6 pt-0">
                   <Button asChild size="lg" className="bg-primary/90 hover:bg-primary text-primary-foreground rounded-full px-8">

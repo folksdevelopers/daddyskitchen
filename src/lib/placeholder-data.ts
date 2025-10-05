@@ -74,10 +74,10 @@ export type FeaturedProduct = {
 };
 
 export const featuredProducts: FeaturedProduct[] = [
-  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', imageUrl: '/turmeric.jpg', quantity: 50 },
-  { id: '2', name: 'Chilli Powder', slug: 'chilli-powder', description: 'Vibrant red chilli powder ground from premium dried red chillies. Adds heat, color, and depth to your dishes with its bold, fiery flavor.', imageUrl: '/chilli-powder.jpg', quantity: 30 },
-  { id: '3', name: 'Black Pepper Powder', slug: 'black-pepper-powder', description: 'Freshly ground black pepper with a sharp, pungent flavor and aromatic fragrance. Essential for enhancing the taste of any savory dish.', imageUrl: '/black-pepper-powder.jpg', quantity: 40 },
-  { id: '4', name: 'Coriander Powder', slug: 'coriander-powder', description: 'Freshly ground coriander seeds that add a warm, nutty, and citrusy flavor to curries, dals, and marinades.', imageUrl: '/coriander-powder.jpg', quantity: 60 }
+  { id: '1', name: 'Turmeric Powder', slug: 'turmeric-powder-pure', description: 'Pure ground turmeric made from high-quality dried turmeric rhizomes. Known for its rich color, earthy flavor, and medicinal properties.', imageUrl: '/turmeric.jpg', quantity: 50 },
+  { id: '2', name: 'Chilli Powder', slug: 'chilli-powder-diamond', description: 'Vibrant red chilli powder ground from premium dried red chillies. Adds heat, color, and depth to your dishes with its bold, fiery flavor.', imageUrl: '/chilli-powder.jpg', quantity: 30 },
+  { id: '3', name: 'Black Pepper Powder', slug: 'black-pepper-powder-pure', description: 'Freshly ground black pepper with a sharp, pungent flavor and aromatic fragrance. Essential for enhancing the taste of any savory dish.', imageUrl: '/black-pepper-powder.jpg', quantity: 40 },
+  { id: '4', name: 'Coriander Powder', slug: 'coriander-powder-pure', description: 'Freshly ground coriander seeds that add a warm, nutty, and citrusy flavor to curries, dals, and marinades.', imageUrl: '/coriander-powder.jpg', quantity: 60 }
 ];
 
 export type Testimonial = {
