@@ -14,6 +14,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { heroSlides } from '@/lib/placeholder-data';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export function Hero() {
   const images = PlaceHolderImages;
@@ -30,8 +31,10 @@ export function Hero() {
           <p className="max-w-md text-lg text-muted-foreground">
             Authentic Kerala spices delivered worldwide. Premium quality masalas crafted with traditional recipes for modern kitchens.
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            View Products
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Link href="/products">
+                View Products
+            </Link>
           </Button>
         </div>
         <div className="relative hidden flex-1 lg:flex items-center justify-center">
