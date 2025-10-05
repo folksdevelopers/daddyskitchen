@@ -24,13 +24,15 @@ export function ProductDetails({ product }: { product: Product }) {
             
             <div className="relative h-80 lg:h-[500px] w-full p-6 sm:p-8 lg:p-12 order-first lg:order-last bg-secondary/30 rounded-2xl">
                 <div className='absolute inset-0 w-full h-full bg-primary/10 blur-3xl rounded-full -z-0' />
-              <Image
-                src={product.imageUrl}
-                alt={product.name}
-                data-ai-hint={product.name}
-                fill
-                className="object-contain"
-              />
+              <div className="relative w-full h-full">
+                <Image
+                    src={product.imageUrl}
+                    alt={product.name}
+                    data-ai-hint={product.name}
+                    fill
+                    className="object-contain"
+                />
+              </div>
             </div>
             
             <div className="p-6 sm:p-8 lg:p-12">
@@ -89,5 +91,3 @@ export function ProductDetails({ product }: { product: Product }) {
     </section>
   );
 }
-
-    
