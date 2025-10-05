@@ -63,7 +63,7 @@ export function CategoryProductList({ products }: { products: Product[] }) {
                     <span className="w-3 h-1 bg-muted rounded-full"></span>
                     <span className="w-3 h-1 bg-muted rounded-full"></span>
                   </div>
-                  <CardDescription className="mt-4 text-base text-muted-foreground">{product.description}</CardDescription>
+                  <CardDescription className="mt-4 text-base text-muted-foreground">{product.minDescription}</CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-center p-6 pt-0">
                   <Button asChild size="lg" className="bg-primary/90 hover:bg-primary text-primary-foreground rounded-full px-8">
