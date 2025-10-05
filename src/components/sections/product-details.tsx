@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -7,11 +8,11 @@ import { Button } from '../ui/button';
 import { Award, Leaf, ShieldBan } from 'lucide-react';
 import Link from 'next/link';
 
-const assurances = [
-  { icon: <Award className="h-8 w-8" />, text: 'High Quality' },
-  { icon: <Leaf className="h-8 w-8" />, text: '100% Organic' },
-  { icon: <ShieldBan className="h-8 w-8" />, text: 'No Chemicals' },
-];
+const iconMap: { [key: string]: React.ReactNode } = {
+  'High Quality': <Award className="h-8 w-8" />,
+  '100% Organic': <Leaf className="h-8 w-8" />,
+  'No Chemicals': <ShieldBan className="h-8 w-8" />,
+};
 
 export function ProductDetails({ product }: { product: Product }) {
 
@@ -46,19 +47,21 @@ export function ProductDetails({ product }: { product: Product }) {
                 {product.description}
               </p>
               
-              <div className="mt-8">
-                <h3 className="text-xl font-bold text-primary">Our Assurance</h3>
-                <div className="mt-4 grid grid-cols-3 gap-4 text-center">
-                  {assurances.map((assurance, index) => (
-                    <div key={index} className="flex flex-col items-center gap-2">
-                      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
-                        {assurance.icon}
+              {product.features && product.features.length > 0 && (
+                <div className="mt-8">
+                  <h3 className="text-xl font-bold text-primary">Our Assurance</h3>
+                  <div className="mt-4 grid grid-cols-3 gap-4 text-center">
+                    {product.features.map((feature, index) => (
+                      <div key={index} className="flex flex-col items-center gap-2">
+                        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                          {iconMap[feature] || <Award className="h-8 w-8" />}
+                        </div>
+                        <p className="text-sm font-medium text-muted-foreground">{feature}</p>
                       </div>
-                      <p className="text-sm font-medium text-muted-foreground">{assurance.text}</p>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
                <div className="mt-8">
                 <h3 className="text-xl font-bold text-primary">Available Weights</h3>
@@ -87,3 +90,5 @@ export function ProductDetails({ product }: { product: Product }) {
     </section>
   );
 }
+
+    
