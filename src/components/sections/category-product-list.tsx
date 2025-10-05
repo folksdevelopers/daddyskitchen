@@ -41,10 +41,10 @@ export function CategoryProductList({ products }: { products: Product[] }) {
   return (
     <section className="py-12 bg-secondary/30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 justify-center">
+        <div className="flex flex-wrap gap-8 justify-center">
           {products.map((product) => {
             return (
-              <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center">
+              <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]">
                 <CardHeader className="p-0">
                   <div className="relative h-64 w-full">
                     <Image
