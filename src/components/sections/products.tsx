@@ -32,7 +32,7 @@ export function Products() {
             return (
               <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center">
                 <CardHeader className="p-0">
-                  <div className="relative h-56 w-full">
+                  <div className="relative h-64 w-full">
                     <Image
                       src={product.imageUrl}
                       alt={product.name}
