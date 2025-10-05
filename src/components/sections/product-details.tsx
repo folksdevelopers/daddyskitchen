@@ -29,7 +29,7 @@ export function ProductDetails({ product }: { product: Product }) {
                 alt={product.name}
                 data-ai-hint={product.name}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             
