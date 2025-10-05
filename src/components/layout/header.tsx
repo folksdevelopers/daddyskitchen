@@ -6,6 +6,8 @@ import { Menu, Search } from 'lucide-react';
 import { Logo } from '../logo';
 import { useState } from 'react';
 import { Input } from '../ui/input';
+import { useRouter } from 'next/navigation';
+import type { FormEvent } from 'react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -16,8 +18,36 @@ const navLinks = [
 
 export function Header() {
   const [isSheetOpen, setSheetOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const router = useRouter();
 
   const closeSheet = () => setSheetOpen(false);
+
+  const handleSearchSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      if (isSheetOpen) {
+        closeSheet();
+      }
+    }
+  };
+
+  const searchComponent = (
+    <form onSubmit={handleSearchSubmit} className="flex items-center rounded-md border border-input">
+      <Input
+        type="search"
+        placeholder="Search"
+        className="border-none bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+      <Button type="submit" size="icon" className="rounded-l-none bg-primary hover:bg-primary/90">
+        <Search className="h-5 w-5" />
+        <span className="sr-only">Search</span>
+      </Button>
+    </form>
+  );
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -35,16 +65,8 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <div className="hidden sm:flex items-center rounded-md border border-input">
-             <Input
-                type="search"
-                placeholder="Search"
-                className="border-none bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
-             />
-             <Button type="submit" size="icon" className="rounded-l-none bg-primary hover:bg-primary/90">
-                <Search className="h-5 w-5" />
-                <span className="sr-only">Search</span>
-            </Button>
+          <div className="hidden sm:flex">
+             {searchComponent}
           </div>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
@@ -68,16 +90,8 @@ export function Header() {
                     </a>
                   ))}
                 </nav>
-                <div className="flex items-center rounded-md border border-input">
-                    <Input
-                        type="search"
-                        placeholder="Search"
-                        className="border-none bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
-                    />
-                    <Button type="submit" size="icon" className="rounded-l-none bg-primary hover:bg-primary/90">
-                        <Search className="h-5 w-5" />
-                        <span className="sr-only">Search</span>
-                    </Button>
+                <div className="flex">
+                    {searchComponent}
                 </div>
               </div>
             </SheetContent>
