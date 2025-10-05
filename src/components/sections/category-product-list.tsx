@@ -41,26 +41,6 @@ export function CategoryProductList({ products }: { products: Product[] }) {
   return (
     <section className="py-12 bg-secondary/30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center mb-8">
-          <p className="text-muted-foreground">Showing {products.length} results</p>
-          <div className="flex gap-4">
-            <Select>
-              <SelectTrigger className="w-[180px] bg-card border-none shadow-md">
-                <SelectValue placeholder="Sort By Latest" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="latest">Sort By Latest</SelectItem>
-                <SelectItem value="price-asc">Price: Low to High</SelectItem>
-                <SelectItem value="price-desc">Price: High to Low</SelectItem>
-              </SelectContent>
-            </Select>
-            <Button variant="outline" className='bg-card border-none shadow-md'>
-              <Filter className="mr-2 h-4 w-4" />
-              Filter
-            </Button>
-          </div>
-        </div>
-
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((product) => {
             return (
