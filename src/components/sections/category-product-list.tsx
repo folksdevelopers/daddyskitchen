@@ -44,7 +44,7 @@ export function CategoryProductList({ products }: { products: Product[] }) {
         <div className="flex flex-wrap gap-8 justify-center">
           {products.map((product) => {
             return (
-              <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]">
+              <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
                 <CardHeader className="p-0">
                   <div className="relative h-64 w-full">
                     <Image
