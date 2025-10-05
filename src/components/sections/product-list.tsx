@@ -52,7 +52,7 @@ export function ProductList() {
           {allProducts.slice(0, 12).map((product) => {
             return (
               <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center">
-                <CardHeader className="p-6">
+                <CardHeader className="p-0">
                   <div className="relative h-56 w-full">
                     <Image
                       src={product.imageUrl}
@@ -63,7 +63,7 @@ export function ProductList() {
                     />
                   </div>
                 </CardHeader>
-                <CardContent className="flex-1 p-6 pt-0">
+                <CardContent className="flex-1 p-6 pt-6">
                   <CardTitle className="font-headline text-2xl font-bold">{product.name}</CardTitle>
                    <div className="mt-2 flex justify-center items-center gap-1">
                     <span className="w-3 h-1 bg-muted rounded-full"></span>
