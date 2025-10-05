@@ -22,15 +22,14 @@ export function ProductDetails({ product }: { product: Product }) {
         <div className="rounded-2xl bg-card shadow-lg overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             
-            <div className="relative h-80 lg:h-[500px] w-full flex items-center justify-center p-6 sm:p-8 lg:p-12 order-first lg:order-last bg-secondary/30 rounded-2xl">
+            <div className="relative h-80 lg:h-[500px] w-full p-6 sm:p-8 lg:p-12 order-first lg:order-last bg-secondary/30 rounded-2xl">
                 <div className='absolute inset-0 w-full h-full bg-primary/10 blur-3xl rounded-full -z-0' />
               <Image
                 src={product.imageUrl}
                 alt={product.name}
                 data-ai-hint={product.name}
-                width={400}
-                height={400}
-                className="object-contain w-full h-auto max-w-md"
+                fill
+                className="object-cover"
               />
             </div>
             
