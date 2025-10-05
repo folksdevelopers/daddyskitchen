@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 const categories = ['Spices', 'Masala', 'Flours', 'Rices'];
 
 export function Footer() {
-  const [year, setYear] = useState<number>(new Date().getFullYear());
+  const [year, setYear] = useState<number | null>(null);
 
   useEffect(() => {
     setYear(new Date().getFullYear());
@@ -35,7 +35,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               {categories.map((category) => (
                 <li key={category}>
-                  <a href="/products" className="text-gray-400 hover:text-white">
+                  <a href={`/products/category/${category.toLowerCase()}`} className="text-gray-400 hover:text-white">
                     {category}
                   </a>
                 </li>
