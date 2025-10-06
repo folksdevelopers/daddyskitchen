@@ -25,7 +25,7 @@ export function Footer() {
               kitchen to yours.
             </p>
             <div className="mt-4 space-y-2 text-sm text-gray-400">
-              <p>#6, Syndia Dhirani Building, Jurf Industria Area, Ajman.</p>
+              <p>#6, Syndia Dhirani Building, Jurf Industrial Area, Ajman.</p>
               <p>Ph: +971 6 6786779</p>
               <p>Email: info@daddysfoodstuff.com</p>
             </div>

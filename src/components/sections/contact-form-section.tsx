@@ -28,7 +28,7 @@ export function ContactFormSection() {
             <div>
               <h3 className="text-xl font-bold text-primary">Address</h3>
               <p className="mt-2 text-muted-foreground">
-                #6, Syndia Dhirani Building, Jurf Industria Area, Ajman.
+                #6, Syndia Dhirani Building, Jurf Industrial Area, Ajman.
               </p>
               <Button variant="link" className="px-0 mt-2 text-primary">Get Direction</Button>
             </div>
