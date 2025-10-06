@@ -4,10 +4,13 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    template: "%s",
+    template: "%s - Daddy's Kitchen Masala",
     default: "Daddy's Kitchen Masala",
   },
   description: "Daddy's Kitchen Masala brings you the authentic taste of Kerala with our premium, natural spices and traditional blends. Discover a paradise of flavors.",
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
