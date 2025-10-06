@@ -4,18 +4,38 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { ProductDetails } from '@/components/sections/product-details';
 import { RelatedProducts } from '@/components/sections/related-products';
-import { allProducts } from '@/lib/placeholder-data';
+import { allProducts, Product } from '@/lib/placeholder-data';
+import type { Metadata } from 'next';
+import { useEffect } from 'react';
 
-export default function SingleProductPage({ params }: { params: { slug: string } }) {
-  console.log('--- Product Page Log ---');
-  console.log('Received slug from URL:', params.slug);
-
+// This function would typically be used with generateStaticParams,
+// but for this client-side example we will handle metadata dynamically.
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const product = allProducts.find(p => p.slug === params.slug);
-  console.log('Found product:', product);
 
   if (!product) {
-    const allSlugs = allProducts.map(p => p.slug);
-    console.error(`Product with slug '${params.slug}' not found. Available slugs are:`, allSlugs);
+    return {
+      title: 'Product Not Found',
+      description: 'The product you are looking for could not be found.',
+    };
+  }
+
+  return {
+    title: product.name,
+    description: product.description,
+  };
+}
+
+export default function SingleProductPage({ params }: { params: { slug: string } }) {
+  const product = allProducts.find(p => p.slug === params.slug);
+
+  useEffect(() => {
+    if (product) {
+      document.title = `${product.name} - Daddy's Kitchen Masala`;
+    }
+  }, [product]);
+
+  if (!product) {
     return (
       <div className="flex min-h-screen flex-col bg-background text-foreground">
         <Header />

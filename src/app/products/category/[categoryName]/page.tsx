@@ -1,13 +1,29 @@
-
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { CategoryProductList } from '@/components/sections/category-product-list';
 import { allProducts } from '@/lib/placeholder-data';
+import type { Metadata } from 'next';
+
+function capitalize(s: string) {
+  if (!s) return '';
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+export async function generateMetadata({ params }: { params: { categoryName: string } }): Promise<Metadata> {
+  const categoryName = decodeURIComponent(params.categoryName);
+  const capitalizedCategoryName = capitalize(categoryName);
+
+  return {
+    title: `${capitalizedCategoryName} Products`,
+    description: `Browse our collection of high-quality ${categoryName}. Authentic flavors from Kerala, delivered to your kitchen.`,
+  };
+}
+
 
 export default function CategoryPage({ params }: { params: { categoryName: string } }) {
   const categoryName = decodeURIComponent(params.categoryName);
   const products = allProducts.filter(p => p.category.toLowerCase() === categoryName.toLowerCase());
-  const capitalizedCategoryName = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
+  const capitalizedCategoryName = capitalize(categoryName);
 
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
