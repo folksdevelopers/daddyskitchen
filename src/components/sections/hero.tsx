@@ -9,8 +9,6 @@ import Link from 'next/link';
 export function Hero() {
   const images = PlaceHolderImages;
   const image1 = images.find(img => img.id === heroSlides[0]?.imageId);
-  const image2 = images.find(img => img.id === heroSlides[1]?.imageId);
-  const image3 = images.find(img => img.id === heroSlides[2]?.imageId);
 
   return (
     <section className="relative w-full bg-background overflow-hidden">
@@ -42,28 +40,6 @@ export function Hero() {
                     fill
                     className="object-contain"
                     priority
-                  />
-                </div>
-              )}
-              {image2 && (
-                <div className="absolute top-[20%] left-[10%] w-[400px] h-[400px] floating-2">
-                   <Image
-                    src={image2.imageUrl}
-                    alt={image2.description}
-                    data-ai-hint={image2.imageHint}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              )}
-              {image3 && (
-                 <div className="absolute bottom-[10%] right-[5%] w-[450px] h-[450px] floating-3">
-                   <Image
-                    src={image3.imageUrl}
-                    alt={image3.description}
-                    data-ai-hint={image3.imageHint}
-                    fill
-                    className="object-contain"
                   />
                 </div>
               )}
