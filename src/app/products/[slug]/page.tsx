@@ -4,27 +4,8 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { ProductDetails } from '@/components/sections/product-details';
 import { RelatedProducts } from '@/components/sections/related-products';
-import { allProducts, Product } from '@/lib/placeholder-data';
-import type { Metadata } from 'next';
+import { allProducts } from '@/lib/placeholder-data';
 import { useEffect } from 'react';
-
-// This function would typically be used with generateStaticParams,
-// but for this client-side example we will handle metadata dynamically.
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const product = allProducts.find(p => p.slug === params.slug);
-
-  if (!product) {
-    return {
-      title: 'Product Not Found',
-      description: 'The product you are looking for could not be found.',
-    };
-  }
-
-  return {
-    title: product.name,
-    description: product.description,
-  };
-}
 
 export default function SingleProductPage({ params }: { params: { slug: string } }) {
   const product = allProducts.find(p => p.slug === params.slug);
@@ -32,6 +13,8 @@ export default function SingleProductPage({ params }: { params: { slug: string }
   useEffect(() => {
     if (product) {
       document.title = `${product.name} - Daddy's Kitchen Masala`;
+    } else {
+      document.title = "Product Not Found - Daddy's Kitchen Masala";
     }
   }, [product]);
 
