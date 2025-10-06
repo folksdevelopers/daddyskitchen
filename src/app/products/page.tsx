@@ -6,7 +6,7 @@ import { Collections } from '@/components/sections/collections';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'All Products',
+  title: "All Products - Daddy's Kitchen Masala",
   description: 'Explore the full range of authentic Kerala spices, masalas, flours, and rices from Daddy\'s Kitchen. Discover premium quality ingredients for your kitchen.',
 };
 

@@ -7,6 +7,12 @@ import { Hero } from '@/components/sections/hero';
 import { Products } from '@/components/sections/products';
 import { Testimonials } from '@/components/sections/testimonials';
 import { WhyChooseUs } from '@/components/sections/why-choose-us';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Daddy's Kitchen Masala - Paradise of Spices!",
+};
+
 
 export default function Home() {
   return (

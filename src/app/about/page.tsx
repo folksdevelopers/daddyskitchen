@@ -6,7 +6,7 @@ import { MissionVision } from '@/components/sections/mission-vision';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: "About Us - Daddy's Kitchen Masala",
   description: "Learn about Daddy's Kitchen's journey, from our passion for authentic Kerala spices to our commitment to quality and tradition. Discover our story and mission.",
 };
 

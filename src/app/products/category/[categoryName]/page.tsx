@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: { categoryName: str
   const capitalizedCategoryName = capitalize(categoryName);
 
   return {
-    title: `${capitalizedCategoryName} Products`,
+    title: `${capitalizedCategoryName} Products - Daddy's Kitchen Masala`,
     description: `Browse our collection of high-quality ${categoryName}. Authentic flavors from Kerala, delivered to your kitchen.`,
   };
 }

@@ -5,7 +5,7 @@ import { ContactFormSection } from '@/components/sections/contact-form-section';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
+  title: "Contact Us - Daddy's Kitchen Masala",
   description: "Get in touch with Daddy's Kitchen Masala. Whether you have a question, feedback, or a business inquiry, we'd love to hear from you. Find our address, phone, and email.",
 };
 
