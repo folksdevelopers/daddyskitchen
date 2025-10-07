@@ -37,6 +37,7 @@ export function ProductList() {
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
+      window.scrollTo(0, 0);
     }
   };
 
