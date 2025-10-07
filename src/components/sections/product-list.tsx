@@ -22,13 +22,14 @@ import {
 import { Filter } from 'lucide-react';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '../ui/pagination';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export function ProductList() {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12;
   const totalProducts = allProducts.length;
   const totalPages = Math.ceil(totalProducts / productsPerPage);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = Math.min(startIndex + productsPerPage, totalProducts);
@@ -37,7 +38,7 @@ export function ProductList() {
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
-      window.scrollTo(0, 0);
+      sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -57,7 +58,7 @@ export function ProductList() {
   };
 
   return (
-    <section className="py-12 bg-secondary/30">
+    <section ref={sectionRef} className="py-12 bg-secondary/30 scroll-mt-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-8">
           <p className="text-muted-foreground">Showing {startIndex + 1}–{endIndex} of {totalProducts} results</p>
