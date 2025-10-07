@@ -4,7 +4,7 @@ const features = [
   {
     icon: <Leaf className="h-8 w-8" />,
     title: '100% Natural',
-    description: 'We source the finest Kerala spices grown using sustainable, organic farming methods, with no artificial colors, additives, or preservatives.',
+    description: 'We source the finest Kerala spices grown using sustainable, natural farming methods, with no artificial colors, additives, or preservatives.',
   },
   {
     icon: <Globe className="h-8 w-8" />,

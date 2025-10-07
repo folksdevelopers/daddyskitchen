@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const iconMap: { [key: string]: React.ReactNode } = {
   'High Quality': <Award className="h-8 w-8" />,
-  '100% Organic': <Leaf className="h-8 w-8" />,
+  '100% Natural': <Leaf className="h-8 w-8" />,
   'No Chemicals': <ShieldBan className="h-8 w-8" />,
 };
 
