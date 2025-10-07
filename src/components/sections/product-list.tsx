@@ -22,14 +22,44 @@ import {
 import { Filter } from 'lucide-react';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '../ui/pagination';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export function ProductList() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 12;
+  const totalProducts = allProducts.length;
+  const totalPages = Math.ceil(totalProducts / productsPerPage);
+
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = Math.min(startIndex + productsPerPage, totalProducts);
+  const currentProducts = allProducts.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
+
+  const handlePrev = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    handlePageChange(currentPage - 1);
+  }
+
+  const handleNext = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    handlePageChange(currentPage + 1);
+  }
+  
+  const handlePageLinkClick = (page: number) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    handlePageChange(page);
+  };
 
   return (
     <section className="py-12 bg-secondary/30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-8">
-          <p className="text-muted-foreground">Showing 1–12 of 16 results</p>
+          <p className="text-muted-foreground">Showing {startIndex + 1}–{endIndex} of {totalProducts} results</p>
           <div className="flex gap-4">
             <Select>
               <SelectTrigger className="w-[180px] bg-card border-none shadow-md">
@@ -49,7 +79,7 @@ export function ProductList() {
         </div>
 
         <div className="flex flex-wrap gap-8 justify-center">
-          {allProducts.slice(0, 12).map((product) => {
+          {currentProducts.map((product) => {
             return (
               <Card key={product.id} className="group flex flex-col overflow-hidden rounded-2xl shadow-lg transition-all hover:shadow-2xl text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
                 <CardHeader className="p-0">
@@ -83,25 +113,27 @@ export function ProductList() {
             );
           })}
         </div>
-        <Pagination className='mt-12'>
-            <PaginationContent>
-                <PaginationItem>
-                    <PaginationPrevious href="#" />
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#" isActive>1</PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">2</PaginationLink>
-                </PaginationItem>
-                 <PaginationItem>
-                    <PaginationLink href="#">3</PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationNext href="#" />
-                </PaginationItem>
-            </PaginationContent>
-        </Pagination>
+        
+        {totalPages > 1 && (
+            <Pagination className='mt-12'>
+                <PaginationContent>
+                    <PaginationItem>
+                        <PaginationPrevious href="#" onClick={handlePrev} className={currentPage === 1 ? 'pointer-events-none opacity-50' : ''} />
+                    </PaginationItem>
+                    {[...Array(totalPages)].map((_, i) => (
+                        <PaginationItem key={i}>
+                            <PaginationLink href="#" isActive={currentPage === i + 1} onClick={handlePageLinkClick(i + 1)}>
+                                {i + 1}
+                            </PaginationLink>
+                        </PaginationItem>
+                    ))}
+                    <PaginationItem>
+                        <PaginationNext href="#" onClick={handleNext} className={currentPage === totalPages ? 'pointer-events-none opacity-50' : ''}/>
+                    </PaginationItem>
+                </PaginationContent>
+            </Pagination>
+        )}
+
       </div>
     </section>
   );
