@@ -12,14 +12,6 @@ import {
 import { allProducts } from '@/lib/placeholder-data';
 import Image from 'next/image';
 import { Button } from '../ui/button';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Filter } from 'lucide-react';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '../ui/pagination';
 import Link from 'next/link';
 import { useState, useRef } from 'react';
@@ -60,24 +52,8 @@ export function ProductList() {
   return (
     <section ref={sectionRef} className="py-12 bg-secondary/30 scroll-mt-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-start items-center mb-8">
           <p className="text-muted-foreground">Showing {startIndex + 1}–{endIndex} of {totalProducts} results</p>
-          <div className="flex gap-4">
-            <Select>
-              <SelectTrigger className="w-[180px] bg-card border-none shadow-md">
-                <SelectValue placeholder="Sort By Latest" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="latest">Sort By Latest</SelectItem>
-                <SelectItem value="price-asc">Price: Low to High</SelectItem>
-                <SelectItem value="price-desc">Price: High to Low</SelectItem>
-              </SelectContent>
-            </Select>
-            <Button variant="outline" className='bg-card border-none shadow-md'>
-              <Filter className="mr-2 h-4 w-4" />
-              Filter
-            </Button>
-          </div>
         </div>
 
         <div className="flex flex-wrap gap-8 justify-center">
