@@ -5,10 +5,15 @@ import { Button } from '../ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { heroSlides } from '@/lib/placeholder-data';
 import Link from 'next/link';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 export function Hero() {
   const images = PlaceHolderImages;
-  const image1 = images.find(img => img.id === heroSlides[0]?.imageId);
 
   return (
     <section className="relative w-full bg-background overflow-hidden">
@@ -29,21 +34,38 @@ export function Hero() {
           </Button>
         </div>
         <div className="relative hidden flex-1 lg:flex items-center justify-center h-full">
-            <div className='absolute w-[500px] h-[300px] bg-primary/20 blur-3xl rounded-full' />
-            <div className="relative w-full h-full">
-              {image1 && (
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] floating-1">
-                  <Image
-                    src={image1.imageUrl}
-                    alt={image1.description}
-                    data-ai-hint={image1.imageHint}
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </div>
-              )}
-            </div>
+          <Carousel
+            className="w-full max-w-lg"
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              {heroSlides.map((slide) => {
+                const image = images.find(img => img.id === slide.imageId);
+                return (
+                  <CarouselItem key={slide.id}>
+                    <div className="relative w-full h-[550px]">
+                      {image && (
+                        <Image
+                          src={image.imageUrl}
+                          alt={image.description}
+                          data-ai-hint={image.imageHint}
+                          fill
+                          className="object-contain"
+                          priority
+                        />
+                      )}
+                    </div>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </section>
