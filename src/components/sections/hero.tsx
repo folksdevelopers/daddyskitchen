@@ -33,7 +33,7 @@ export function Hero() {
             </Link>
           </Button>
         </div>
-        <div className="relative hidden flex-1 lg:flex items-center justify-center h-full">
+        <div className="relative hidden flex-1 md:flex items-center justify-center h-full">
           <Carousel
             className="w-full max-w-lg"
             plugins={[
