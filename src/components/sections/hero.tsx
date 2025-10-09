@@ -19,21 +19,35 @@ export function Hero() {
     <section className="relative w-full bg-background overflow-hidden">
       <div className="container mx-auto flex min-h-[80vh] max-h-[800px] min-h-[600px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex-1 space-y-6 z-10">
-          <h1 className="font-headline text-6xl font-bold tracking-tight text-accent md:text-7xl lg:text-8xl">
+          <h1 
+            className="font-headline text-6xl font-bold tracking-tight text-accent md:text-7xl lg:text-8xl animate-slide-in-left"
+            style={{ animationDelay: '0.1s' }}
+          >
             Paradise,
             <br />
             of Spices!
           </h1>
-          <p className="max-w-md text-lg text-muted-foreground">
+          <p 
+            className="max-w-md text-lg text-muted-foreground animate-slide-in-left"
+            style={{ animationDelay: '0.3s' }}
+          >
             Authentic Kerala spices delivered worldwide. Premium quality masalas crafted with traditional recipes for modern kitchens.
           </p>
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            <Link href="/products">
-                View Products
-            </Link>
-          </Button>
+          <div 
+            className="animate-slide-in-left"
+            style={{ animationDelay: '0.5s' }}
+          >
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Link href="/products">
+                  View Products
+              </Link>
+            </Button>
+          </div>
         </div>
-        <div className="relative hidden flex-1 md:flex items-center justify-center h-full">
+        <div 
+            className="relative hidden md:flex flex-1 items-center justify-center h-full animate-slide-in-right"
+            style={{ animationDelay: '0.3s' }}
+        >
           <Carousel
             className="w-full max-w-lg"
             plugins={[
