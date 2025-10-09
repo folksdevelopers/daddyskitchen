@@ -11,6 +11,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import Fade from "embla-carousel-fade"
 
 export function Hero() {
   const images = PlaceHolderImages;
@@ -52,10 +53,11 @@ export function Hero() {
             className="w-full max-w-lg"
             plugins={[
               Autoplay({
-                delay: 4000,
+                delay: 5000,
                 stopOnInteraction: false,
                 stopOnMouseEnter: true,
               }),
+              Fade()
             ]}
           >
             <CarouselContent>
@@ -63,14 +65,14 @@ export function Hero() {
                 const image = images.find(img => img.id === slide.imageId);
                 return (
                   <CarouselItem key={slide.id}>
-                    <div className="relative w-full h-[550px]">
+                    <div className="relative w-full h-[550px] overflow-hidden">
                       {image && (
                         <Image
                           src={image.imageUrl}
                           alt={image.description}
                           data-ai-hint={image.imageHint}
                           fill
-                          className="object-contain"
+                          className="object-contain ken-burns-image"
                           priority
                         />
                       )}
