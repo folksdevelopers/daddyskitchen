@@ -1,27 +1,62 @@
 'use client';
 
+import { useFormState, useFormStatus } from 'react-dom';
+import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { useToast } from '@/hooks/use-toast';
+import { sendContactMessage } from '@/app/contact/actions';
+
+const initialState = {
+  message: '',
+  status: '',
+};
+
+function SubmitButton() {
+  const { pending } = useFormStatus();
+
+  return (
+    <Button type="submit" size="lg" className="bg-gray-900 text-white hover:bg-gray-800 px-10 py-6 text-lg" disabled={pending}>
+      {pending ? 'Submitting...' : 'Submit'}
+    </Button>
+  );
+}
 
 export function ContactFormSection() {
+  const [state, formAction] = useFormState(sendContactMessage, initialState);
+  const { toast } = useToast();
+
+  useEffect(() => {
+    if (state.status === 'success') {
+      toast({
+        title: 'Message Sent!',
+        description: state.message,
+      });
+    } else if (state.status === 'error') {
+      toast({
+        title: 'Error',
+        description: state.message,
+        variant: 'destructive',
+      });
+    }
+  }, [state, toast]);
+
   return (
     <section className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
             <h2 className="text-3xl font-bold tracking-tight text-primary">Sent a Message</h2>
-            <form className="mt-8 space-y-6">
+            <form action={formAction} className="mt-8 space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <Input type="text" placeholder="Name*" className="bg-secondary/50 border-none h-14" />
-                <Input type="email" placeholder="Email*" className="bg-secondary/50 border-none h-14" />
-                <Input type="tel" placeholder="Phone Number" className="bg-secondary/50 border-none h-14" />
-                <Input type="text" placeholder="City" className="bg-secondary/50 border-none h-14" />
+                <Input name="name" type="text" placeholder="Name*" className="bg-secondary/50 border-none h-14" required />
+                <Input name="email" type="email" placeholder="Email*" className="bg-secondary/50 border-none h-14" required />
+                <Input name="phone" type="tel" placeholder="Phone Number" className="bg-secondary/50 border-none h-14" />
+                <Input name="city" type="text" placeholder="City" className="bg-secondary/50 border-none h-14" />
               </div>
-              <Textarea placeholder="Message" className="bg-secondary/50 border-none min-h-40" />
-              <Button type="submit" size="lg" className="bg-gray-900 text-white hover:bg-gray-800 px-10 py-6 text-lg">
-                Submit
-              </Button>
+              <Textarea name="message" placeholder="Message" className="bg-secondary/50 border-none min-h-40" required />
+              <SubmitButton />
             </form>
           </div>
           <div>
