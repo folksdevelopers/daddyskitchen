@@ -40,7 +40,7 @@ export async function sendContactMessage(prevState: any, formData: FormData) {
 
   try {
     await resend.emails.send({
-      from: 'noreply@daddysfoodstuff.com', // IMPORTANT: This requires your domain 'daddysfoodstuff.com' to be verified in Resend.
+      from: 'noreply@resend.daddysfoodstuff.com',
       to: emailTo,
       subject: `New Contact Message from ${name}`,
       reply_to: email,
