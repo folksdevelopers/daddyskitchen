@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   description: "Daddy's Kitchen Masala brings you the authentic taste of Kerala with our premium, natural spices and traditional blends. Discover a paradise of flavors.",
   icons: {
-    icon: '/logo.png',
+    icon: '/favicon.ico',
   },
 };
 
