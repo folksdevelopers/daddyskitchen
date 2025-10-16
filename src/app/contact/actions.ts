@@ -40,9 +40,10 @@ export async function sendContactMessage(prevState: any, formData: FormData) {
 
   try {
     await resend.emails.send({
-      from: 'onboarding@resend.dev', // Required for Resend's sandbox. In production, use your verified domain.
+      from: 'noreply@daddysfoodstuff.com', // IMPORTANT: This requires your domain 'daddysfoodstuff.com' to be verified in Resend.
       to: emailTo,
       subject: `New Contact Message from ${name}`,
+      reply_to: email,
       html: `
         <p>You received a new message from your website's contact form:</p>
         <ul>
